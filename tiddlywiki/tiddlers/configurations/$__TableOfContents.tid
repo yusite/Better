@@ -1,12 +1,12 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140801172000888
+modified: 20140801182109785
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
 
-\define toc-heading(caption,tag)
+\define toc-heading(caption,tag,option)
 <$reveal type="nomatch" state=<<qualify "$:/state/toc/$caption$">> text="show">
   <$button set=<<qualify "$:/state/toc/$caption$">> setTo="show" class="btn-invisible">
   <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
@@ -20,7 +20,7 @@ type: text/vnd.tiddlywiki
 
 <$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
 <ol style="padding-left: 20px;">
-    <$list filter="[!is[system]tag[$tag$]tag[topic]sort[title]]">
+    <$list filter="[!is[system]tag[$tag$]$option$sort[title]]">
       <li style="line-height: 1.35em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
     </$list>
 </ol>
@@ -32,9 +32,10 @@ type: text/vnd.tiddlywiki
 <div style="width:228px;">
 <ol style="padding-left:1.5em;">
 
-<li><<toc-heading "Study Tips" "study">></li>
-<li><<toc-heading "Knowledge Management" "km">></li>
-<li><<toc-heading "Terminology" "term">></li>
+<li><<toc-heading "Bookmarks" "bookmark">></li>
+<li><<toc-heading "Study Tips" "study" "tag[topic]">></li>
+<li><<toc-heading "Knowledge Management" "km" "tag[topic]">></li>
+<li><<toc-heading "Terminology" "term" "tag[topic]">></li>
 
 </ol>
 </div>
