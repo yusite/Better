@@ -1,0 +1,15 @@
+created: 20140801172906819
+modified: 20140801174911768
+source: http://blog.csdn.net/raodotcong/article/details/6429991
+title: Hypergraph
+type: text/vnd.tiddlywiki
+
+!!! 超图（Hypergraph）是什么
+
+简单的来说，对于我们熟悉的图而言，它的一个边（edge）只能和两个顶点连接；而对于超图来讲，人们定义它的边（这里叫超边，hyperedge）可以和''任意个数''的顶点连接。一个图和超图的示意图如下所示：
+
+{{Hypergraph.png}}
+
+而对于超图的一个严格的数学定义，维基百科上是这样写的：
+
+In mathematics, a hypergraph is a generalization of a graph, where an edge can connect any number of vertices. Formally, a hypergraph H is a pair H = (X,E) where X is a set of elements, called nodes or vertices, and E is a set of non-empty subsets of X called hyperedges or links.

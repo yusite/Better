@@ -1,0 +1,17 @@
+created: 20140801170446614
+modified: 20140801174949550
+tags: term topic km infoMap
+title: TopicMaps
+type: text/vnd.tiddlywiki
+
+Topic Maps is a standard for the representation and interchange of knowledge, with an emphasis on the //findability// of information. Topic maps were originally developed in the late 1990s as a way to represent [[back-of-the-book index]] structures so that multiple indexes from different sources could be merged. However, the developers quickly realized that with a little additional generalization, they could create a meta-model with potentially far wider application.
+
+A topic map represents information using
+
+* ''topics'', representing any concept, from people, countries, and organizations to software modules, individual files, and events,
+* ''associations'', representing [[hypergraph|Hypergraph]] relationships between topics, and
+* ''occurrences'' representing information resources relevant to a particular topic.
+
+Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only Topic Maps are ISO standards. Topic Maps are a form of SemanticWeb technology similar to RDF.
+
+{{topicmap.png}}
