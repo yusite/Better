@@ -4177,7 +4177,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140801155734477" modified="20140801155735271" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>[!is[system]has[modified]!sort[modified]limit[25]]</pre>
 </div>
-<div current-tiddler="Leo's Top Ten Study Tips" modified="20140801164435234" title="$:/HistoryList" type="application/json">
+<div current-tiddler="Leo's Top Ten Study Tips" modified="20140801165745164" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;Leo's Top Ten Study Tips&quot;
@@ -4309,15 +4309,34 @@ $title$
 <div list="[[Leo's Top Ten Study Tips]] [[Learn From Others]] [[Don't Excel In School, Excel In Life]] [[Work Hard, Play Hard]] [[Set Clear Objectives]] [[Study When You Study]] [[Make Studying Fun]] [[Exercise Regularly]] [[Eat Healthy]] [[Have a Hobby]] [[Sleep Properly]]" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140801163718703" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
-<pre>&lt;div style=&quot;font-size:small;&quot;&gt;
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140801165718404" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<pre>\define toc-heading(caption,tag)
+&lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
+  &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
+  &lt;/$button&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+  &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;hide&quot; class=&quot;btn-invisible&quot;&gt;
+  &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
+  &lt;/$button&gt;
+&lt;/$reveal&gt;
+
+&lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
+&lt;ol style=&quot;padding-left: 20px;&quot;&gt;
+    &lt;$list filter=&quot;[!is[system]tag[$tag$]tag[topic]sort[title]]&quot;&gt;
+      &lt;li style=&quot;line-height: 1.4em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+    &lt;/$list&gt;
+&lt;/ol&gt;
+&lt;/$reveal&gt;
+\end
+
+&lt;div style=&quot;font-size:small;&quot;&gt;
 
 &lt;div style=&quot;width:228px;&quot;&gt;
 &lt;ol style=&quot;padding-left:1.5em;&quot;&gt;
 
-&lt;$list filter=&quot;[!is[system]tag[topic]sort[title]]&quot;&gt;
-&lt;li style=&quot;line-height: 1.5em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
-&lt;/$list&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Study Tips&quot; &quot;study&quot;&gt;&gt;&lt;/li&gt;
 
 &lt;/ol&gt;
 &lt;/div&gt;
