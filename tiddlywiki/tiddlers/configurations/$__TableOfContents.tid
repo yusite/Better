@@ -1,19 +1,38 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140801163718703
+modified: 20140801165718404
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
+
+\define toc-heading(caption,tag)
+<$reveal type="nomatch" state=<<qualify "$:/state/toc/$caption$">> text="show">
+  <$button set=<<qualify "$:/state/toc/$caption$">> setTo="show" class="btn-invisible">
+  <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
+  </$button>
+</$reveal>
+<$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
+  <$button set=<<qualify "$:/state/toc/$caption$">> setTo="hide" class="btn-invisible">
+  <span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">$caption$</span>
+  </$button>
+</$reveal>
+
+<$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
+<ol style="padding-left: 20px;">
+    <$list filter="[!is[system]tag[$tag$]tag[topic]sort[title]]">
+      <li style="line-height: 1.4em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
+    </$list>
+</ol>
+</$reveal>
+\end
 
 <div style="font-size:small;">
 
 <div style="width:228px;">
 <ol style="padding-left:1.5em;">
 
-<$list filter="[!is[system]tag[topic]sort[title]]">
-<li style="line-height: 1.5em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
-</$list>
+<li><<toc-heading "Study Tips" "study">></li>
 
 </ol>
 </div>
