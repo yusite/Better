@@ -1,0 +1,11 @@
+created: 20140720145353571
+modified: 20140728093702520
+tags: $:/tags/Macro
+title: $:/macro/listof
+type: text/vnd.tiddlywiki
+
+\define listof(title,type:"hide")
+<$list filter="[list[$title$]]">
+<$macrocall $name="$type$" heading="h1" title={{!!title}}/>
+</$list>
+\end

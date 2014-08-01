@@ -1,0 +1,62 @@
+created: 20140712230707392
+modified: 20140715150108227
+title: $:/core/ui/SideBarLists
+type: text/vnd.tiddlywiki
+
+\define search_bar(option:"!is[system]" sort:"sort[title]" tag:"")
+
+//<small><$count filter="[$option$$tag$search{$:/temp/search}]"/> matches</small>//
+
+<hr>
+
+<$list filter="[$option$$tag$search{$:/temp/search}$sort$limit[250]]" template="$:/core/ui/ListItemTemplate"/>
+
+\end
+
+<div class="tw-sidebar-lists">
+
+<div class="tw-search">
+<$edit-text tiddler="$:/temp/search" type="search" tag="input"/>
+<$reveal state="$:/temp/search" type="nomatch" text="">
+<$linkcatcher to="$:/temp/search">
+<$link to="" class="btn-invisible">{{$:/core/images/close-button}}</$link>
+</$linkcatcher>
+</$reveal>
+</div>
+
+<$reveal state="$:/temp/search" type="nomatch" text="">
+
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">What&nbsp;</span> <$select tiddler="$:/state/search_option">
+<option value="!is[system]">All articles</option>
+<option value="is[system]">System</option>
+<option value="all[shadows]">Shadows</option>
+</$select></small>
+
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;How&nbsp;</span> <$select tiddler="$:/state/search_sort">
+<option value="sort[title]">By title</option>
+<option value="!sort[modified]">By modified time</option>
+</$select></small>
+
+<small><span style="font-family:'Courier New', Courier, 'Liberation Mono', monospace;">&nbsp;Has&nbsp;</span> <$select tiddler="$:/state/search_tag">
+<option value="">N/D</option>
+<option value="untagged[]">no tags</option>
+<$list filter='[tags[]!is[system]sort[title]]'>
+<option>tag[<$view field='title'/>]</option>
+</$list>
+</$select></small>
+
+<div class="tw-search-results">
+
+<$macrocall $name="search_bar" option={{$:/state/search_option}} sort={{$:/state/search_sort}} tag={{$:/state/search_tag}}/>
+
+</div>
+
+</$reveal>
+
+<$reveal state="$:/temp/search" type="match" text="">
+
+<<tabs "[all[shadows+tiddlers]tag[$:/tags/SideBar]!has[draft.of]]" "$:/TableOfContents" "$:/state/tab/sidebar">>
+
+</$reveal>
+
+</div>

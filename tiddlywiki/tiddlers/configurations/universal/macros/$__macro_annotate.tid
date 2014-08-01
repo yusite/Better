@@ -1,0 +1,32 @@
+created: 20140716130346842
+modified: 20140728104937509
+tags: $:/tags/Macro
+title: $:/macro/annotate
+type: text/vnd.tiddlywiki
+
+\define footnote(comment:"",tiddler:"")
+<$button popup=<<qualify "$:/state/comment/$comment$_$tiddler$">> class="btn-invisible"><sup style="color:orangered;">&dagger;</sup></$button>
+<$reveal type="popup" state=<<qualify "$:/state/comment/$comment$_$tiddler$">>>
+
+@@.tw-drop-down.inline-link
+$comment$
+<$reveal type="nomatch" state="$tiddler$" text="">
+<p>[[$tiddler$]]</p>
+<$transclude tiddler="$tiddler$" mode="block"/>
+</$reveal>
+@@
+
+</$reveal>
+\end
+
+\define dict(word,random)
+<$button popup=<<qualify "$:/state/comment/$word$_$random$">> class="btn-invisible"><sup style="color:#149FED;">?</sup></$button>
+<$reveal type="popup" state=<<qualify "$:/state/comment/$word$_$random$">>>
+
+@@.tw-drop-down.inline-link
+<p>[[$word$]]</p>
+<$transclude tiddler="$word$" mode="block"/>
+@@
+
+</$reveal>
+\end

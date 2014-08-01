@@ -1,0 +1,39 @@
+caption: More
+created: 20140712202419609
+modified: 20140724100517166
+tags: $:/tags/SideBar
+title: $:/core/ui/SideBar/Tools
+type: text/vnd.tiddlywiki
+
+\define lingo-base() $:/language/ControlPanel/
+<<lingo Tools/Import/Prompt>> <$browse/>
+
+---
+
+{{$:/snippets/viewswitcher}}
+
+---
+
+Save this wiki: <$button message="tw-save-wiki" title={{$:/language/Buttons/SaveWiki/Hint}} aria-label={{$:/language/Buttons/SaveWiki/Caption}} class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/save-button}}</span></$button>
+
+---
+
+Control Panel: <$button to="$:/ControlPanel" title={{$:/language/Buttons/ControlPanel/Hint}} aria-label={{$:/language/Buttons/ControlPanel/Caption}} class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/options-button}}</span></$button>
+
+---
+
+Edit Table of Contents <$button message="tw-edit-tiddler" param="$:/TableOfContents" class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/edit-button}}</span></$button>
+
+---
+
+Edit Sidebar Lists <$button message="tw-edit-tiddler" param="$:/core/ui/SideBarLists" class="btn-invisible"><span style="fill:#5778d8;">{{$:/core/images/edit-button}}</span></$button>
+
+---
+
+{{$:/snippets/encryptionstatus}}
+
+---
+
+<<lingo Basics/Version/Prompt>> <<version>>
+
+---

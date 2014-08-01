@@ -1,0 +1,356 @@
+title: $:/themes/zacwiki/styles.tid
+tags: $:/tags/stylesheet
+type: text/vnd.tiddlywiki
+
+\rules only filteredtranscludeinline transcludeinline macrodef macrocallinline
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Regular.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: normal;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Italic.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: bold;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-Bold.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: bold;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatin-BoldItalic.woff">>);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url(<<datauri "$:/themes/zacwiki/fonts/LatoLatinLight-Regular.woff">>);
+}
+
+html {
+	letter-spacing: 0.01em;
+}
+
+.tw-site-title, .titlebar {
+	letter-spacing: normal;
+}
+
+.tw-site-subtitle {
+	color: rgba(24, 41, 85, 0.5);
+}
+
+.tw-subtitle {
+	border-bottom: 1px dashed #e8e8e8;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	color: #cecece;
+}
+
+a.tw-tiddlylink {
+	font-weight: inherit;
+}
+
+.story-river .body h1 {
+	font-size: 1.9em;
+	margin: 1em 0;
+	color: #333333;
+	font-weight: bold;
+}
+
+.story-river .body h2 {
+	font-size: 1.7em;
+	margin: 0.9em 0;
+}
+
+.story-river .body h3 {
+	font-size: 1.4em;
+}
+
+.story-river .body h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+body.tw-body,
+.tw-sidebar-lists .tw-tab-buttons button.tw-tab-selected {
+	background: #ececec;
+}
+
+body.tw-body {
+	color: #555555;
+}
+
+body.tw-body .story-river .body p {
+	margin: 1.3em 0;
+}
+
+body.tw-body .story-river .body > ol,
+body.tw-body .story-river .body > ul {
+	margin: 1.5em 0;
+}
+
+body.tw-body .story-river .body li {
+	margin: 5px 0;
+	line-height: 23px;
+}
+
+b, strong {
+	color: #111111;
+}
+
+.tw-sidebar-lists .tw-tab-buttons button {
+	background-color: #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+}
+
+.tw-sidebar-lists .tw-tab-buttons.tw-vertical button {
+	border-bottom: 1px solid #d8d8d8;
+	border-top: 0px;
+	padding-top: 5px;
+}
+
+.tw-sidebar-lists .tw-tab-buttons.tw-vertical button.tw-tab-selected {
+	border-left: 1px solid #d8d8d8;
+	border-top: 1px solid #d8d8d8;
+}
+
+.tw-page-controls {
+	margin: 0;
+}
+
+.tw-tiddler-controls button svg {
+	fill: rgba(24, 41, 85, 0.2);
+}
+
+.tw-tags-wrapper {
+	margin: 10px 0 26px 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #d8d8d8;
+	padding: 0;
+}
+
+.tw-site-title, .titlebar {
+	font-size: 2.15em;
+}
+
+.tw-search {
+	padding-top: 8px;
+	padding-bottom: 2px;
+}
+
+.sidebar-header,
+.tw-sidebar-lists a.tw-tiddlylink {
+	color: #888888;
+}
+
+.tw-sidebar-lists .tw-search input {
+	border: 1px solid #d8d8d8;
+}
+
+.tw-sidebar-lists .tw-tab-divider {
+	border-top: 1px solid #d8d8d8;
+}
+
+.tw-tiddler-frame {
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, 2px 3px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tw-tiddler-frame img {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.tw-tiddler-info {
+	box-shadow: none;
+}
+
+@media (min-width: 770px) {
+	.tw-tiddler-frame {
+		margin-left: 13px;
+	}
+	.story-river {
+		padding-right: 68px;
+	}
+}
+
+@media (min-width: 480px) {
+	.tw-tiddler-frame {
+		padding: 28px 44px 40px 44px;
+	}
+	.tw-tiddler-info {
+		margin: 0 -45px 0 -45px;
+	}
+	.tw-tiddler-frame .tw-tiddler-controls {
+		margin-left: 0.8em;
+	}
+}
+
+@media (max-width: 480px) {
+	.tw-tiddler-info {
+		padding: 10px;
+		margin: 0 -15px 0 -15px;
+	}
+}
+
+code {
+	background-color: inherit;
+	border: none;
+	padding: 0;
+}
+
+pre {
+	border: 1px solid #d8d8d8;
+	background-color: #f8f8f8;
+}
+
+li > pre {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+table th, table td {
+	line-height: 23px;
+	padding: 3px 7px 3px 7px;
+}
+
+.tw-missing-tiddler-label {
+	padding-right: 0.5em;
+}
+
+.tw-topbar-right {
+	top: 5px;
+	right: 5px;
+}
+
+.border {
+	background: #fafafa;
+	padding: 8px;
+	border: 1px solid;
+	border-color: #e5e5e5 #dbdbdb #d2d2d2;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 1px 2px;
+}
+
+.tw-tab-buttons button {
+	padding: 2px 7px 3px 7px;
+	line-height: 1.6;
+}
+
+.tw-tag-label {
+	padding: 3px 9px;
+	border-radius: 20px;
+	font-weight: 300;
+	background-color: rgba(24, 41, 85, 0.3);
+}
+
+.tw-tag-list-item {
+	margin-right: 3px;
+}
+
+.left {
+	float: left;
+	margin-right: 2em;
+}
+
+.right {
+	float: right;
+	margin-left: 2em;
+}
+
+.middle {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yellow {
+	background-color: rgba(252, 243, 88, 0.7);
+	border-radius: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.blue {
+	background-color: rgba(68, 147, 248, 0.3);
+	border-radius: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.red {
+	background-color: rgba(248, 74, 74, 0.5);
+	border-radius: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.green {
+	background-color: rgba(163, 223, 55, 0.5);
+	border-radius: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.red-line {
+	border-bottom: 1px dashed #ff0000 !important;
+	text-decoration: none;
+}
+
+.tw-drop-down {
+	padding: 8px 18px 10px 14px;
+	box-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+	border-radius: 2px;
+	border: none;
+	background: whitesmoke;
+	display: block;
+	white-space: normal;
+	min-width: 300px;
+}
+
+body.tw-body .story-river .body p.tw-drop-down {
+	margin: 0;
+}
+
+body.tw-body .story-river .body .tw-drop-down p {
+	margin: 0.5em 0;
+	line-height: 24px;
+}
+
+.tw-drop-down.inline-link a {
+	display: inline;
+	padding: 0;
+}
+
+ol.tw-drop-down,
+ul.tw-drop-down {
+	padding-left: 2.5em;
+}
+
+.nolink {
+	pointer-events: none;
+	cursor: default;
+}
+
+.nolink a {
+	color: #149FED;
+}

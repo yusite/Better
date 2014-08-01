@@ -1,0 +1,8 @@
+created: 20140630131636250
+list-after: $:/core/ui/ViewToolbar/edit
+modified: 20140801134250028
+tags: $:/tags/ViewToolbar $:/tags/EditToolbar
+title: $:/core/ui/ViewToolbar/close-others
+type: text/vnd.tiddlywiki
+
+<$button message="tw-close-other-tiddlers" title="Close other tiddlers" aria-label="Close other tiddlers" class="btn-invisible">{{$:/core/images/close-others-button}}</$button>

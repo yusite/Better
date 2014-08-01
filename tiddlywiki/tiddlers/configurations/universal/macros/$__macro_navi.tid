@@ -1,0 +1,20 @@
+created: 20140720231335336
+modified: 20140722234039910
+tags: $:/tags/Macro
+title: $:/macro/navi
+type: text/vnd.tiddlywiki
+
+\define navi(title)
+<hr>
+<ul>
+<$list filter="[[$title$]listed[]!is[system]]">
+<$list filter="[[$title$]next{!!title}]">
+<li style="margin:0px;">Next: “<$link to={{!!title}}><$view field="title"/></$link>”</li>
+</$list>
+<$list filter="[[$title$]previous{!!title}]">
+<li style="margin:0;">Previous: “<$link to={{!!title}}><$view field="title"/></$link>”</li>
+</$list>
+<li style="margin:0;">Up: “<$link to={{!!title}}><$view field="title"/></$link>”</li>
+</$list>
+</ul>
+\end
