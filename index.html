@@ -193,6 +193,14 @@ Error message and password prompt
 
 <li>$:/themes/zacwiki</li>
 
+<li>back-of-the-book index</li>
+
+<li>back-of-the-book-index.gif</li>
+
+<li>concept maps</li>
+
+<li>ConceptMaps</li>
+
 <li>Don't Excel In School, Excel In Life</li>
 
 <li>Eat Healthy</li>
@@ -201,17 +209,29 @@ Error message and password prompt
 
 <li>Have a Hobby</li>
 
+<li>Hypergraph</li>
+
+<li>Hypergraph.png</li>
+
+<li>InformationMapping</li>
+
 <li>Learn From Others</li>
 
 <li>Leo's Top Ten Study Tips</li>
 
 <li>Make Studying Fun</li>
 
+<li>MindMaps</li>
+
 <li>Set Clear Objectives</li>
 
 <li>Sleep Properly</li>
 
 <li>Study When You Study</li>
+
+<li>topicmap.png</li>
+
+<li>TopicMaps</li>
 
 <li>Work Hard, Play Hard</li>
 
@@ -232,7 +252,16 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
+<pre>ConceptMaps: ConceptMaps.tid
+Hypergraph.png: Hypergraph.png.tid
+Hypergraph: Hypergraph.tid
+InformationMapping: InformationMapping.tid
+MindMaps: MindMaps.tid
+TopicMaps: TopicMaps.tid
+back-of-the-book index: back-of-the-book index.tid
+back-of-the-book-index.gif: back-of-the-book-index.gif.tid
+concept maps: concept maps.tid
+$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
@@ -272,6 +301,7 @@ Set Clear Objectives: entries/Set Clear Objectives.tid
 Sleep Properly: entries/Sleep Properly.tid
 Study When You Study: entries/Study When You Study.tid
 Work Hard, Play Hard: entries/Work Hard, Play Hard.tid
+topicmap.png: topicmap.png.tid
 </pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core plugin" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.0.13-beta">
@@ -4174,13 +4204,13 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140801155734477" modified="20140801155735271" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>[!is[system]has[modified]!sort[modified]limit[25]]</pre>
+<div created="20140801155734477" modified="20140801170020174" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]</pre>
 </div>
-<div current-tiddler="Leo's Top Ten Study Tips" modified="20140801165745164" title="$:/HistoryList" type="application/json">
+<div current-tiddler="MindMaps" modified="20140801180418514" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;Leo's Top Ten Study Tips&quot;
+        &quot;title&quot;: &quot;MindMaps&quot;
     }
 ]</pre>
 </div>
@@ -4306,10 +4336,10 @@ $title$
 <div created="20140801154235716" modified="20140801155652850" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Zac's notebook</pre>
 </div>
-<div list="[[Leo's Top Ten Study Tips]] [[Learn From Others]] [[Don't Excel In School, Excel In Life]] [[Work Hard, Play Hard]] [[Set Clear Objectives]] [[Study When You Study]] [[Make Studying Fun]] [[Exercise Regularly]] [[Eat Healthy]] [[Have a Hobby]] [[Sleep Properly]]" title="$:/StoryList">
+<div list="MindMaps ConceptMaps TopicMaps [[concept maps]] [[Leo's Top Ten Study Tips]]" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140801165718404" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140801172000888" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>\define toc-heading(caption,tag)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
   &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
@@ -4325,7 +4355,7 @@ $title$
 &lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
 &lt;ol style=&quot;padding-left: 20px;&quot;&gt;
     &lt;$list filter=&quot;[!is[system]tag[$tag$]tag[topic]sort[title]]&quot;&gt;
-      &lt;li style=&quot;line-height: 1.4em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+      &lt;li style=&quot;line-height: 1.35em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
     &lt;/$list&gt;
 &lt;/ol&gt;
 &lt;/$reveal&gt;
@@ -4337,6 +4367,8 @@ $title$
 &lt;ol style=&quot;padding-left:1.5em;&quot;&gt;
 
 &lt;li&gt;&lt;&lt;toc-heading &quot;Study Tips&quot; &quot;study&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Knowledge Management&quot; &quot;km&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Terminology&quot; &quot;term&quot;&gt;&gt;&lt;/li&gt;
 
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -4450,6 +4482,26 @@ tiddlerwidth: `660px`</pre>
     }
 }</pre>
 </div>
+<div created="20140801172059910" modified="20140801172428441" tags="term" title="back-of-the-book index" type="text/vnd.tiddlywiki">
+<pre>A back-of-the-book index (or just book index) is a collection of entries, often alphabetically arranged in an index, made to allow users to locate information in a given book (or related document).
+
+[img[back-of-the-book-index.gif]]</pre>
+</div>
+<div _canonical_uri="./images/back-of-the-book-index.gif" created="20140801172237659" modified="20140801172303920" title="back-of-the-book-index.gif" type="image/gif">
+<pre></pre>
+</div>
+<div created="20140801174501042" modified="20140801174600542" tags="term km topic infoMap" title="concept maps" type="text/vnd.tiddlywiki">
+<pre></pre>
+</div>
+<div created="20140801174501042" modified="20140801180018767" tags="term km topic infoMap" title="ConceptMaps" type="text/vnd.tiddlywiki">
+<pre>A concept map is a diagram that depicts suggested relationships between concepts. It is a graphical tool that designers, engineers, technical writers, and others use to organize and structure knowledge.
+
+A concept map typically represents ideas and information as boxes or circles, which it connects with labeled arrows in a downward-branching hierarchical structure. The relationship between concepts can be articulated in linking phrases such as causes, requires, or contributes to.
+
+The technique for visualizing these relationships among different concepts is called concept mapping. Concept maps define the ontology of computer systems, for example with the object-role modeling or Unified Modeling Language formalism.
+
+!!! Concept mapping versus TopicMaps and MindMaps</pre>
+</div>
 <div created="20140701091709376" modified="20140701203040294" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Don't Excel In School, Excel In Life" type="text/vnd.tiddlywiki">
 <pre>School is meant to prepare you for your adult, working life. But it doesn't resemble an adult's working life. There are no exams, there are no teachers, there are no grades, there is no homework. Instead, there are interpersonal relationships, practical knowledge and experience, real-life consequences for mistakes, and self-lead experiments and projects.
 
@@ -4463,6 +4515,39 @@ Many students that graduate with stellar grades end up performing horribly in th
 </div>
 <div created="20140701091614979" modified="20140701102546295" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Have a Hobby" type="text/vnd.tiddlywiki">
 <pre>School should never ever be your one and only thing in life. You should always have friends and you should always have a hobby. Universities and colleges are increasingly implementing broad based admissions standards that weigh extra-curricular activities just as importantly as academic performance. The same goes for employers. In fact, almost all employers look for experience, leadership and practical knowledge before your grades.</pre>
+</div>
+<div created="20140801172906819" modified="20140801174911768" source="http://blog.csdn.net/raodotcong/article/details/6429991" title="Hypergraph" type="text/vnd.tiddlywiki">
+<pre>!!! 超图（Hypergraph）是什么
+
+简单的来说，对于我们熟悉的图而言，它的一个边（edge）只能和两个顶点连接；而对于超图来讲，人们定义它的边（这里叫超边，hyperedge）可以和''任意个数''的顶点连接。一个图和超图的示意图如下所示：
+
+{{Hypergraph.png}}
+
+而对于超图的一个严格的数学定义，维基百科上是这样写的：
+
+In mathematics, a hypergraph is a generalization of a graph, where an edge can connect any number of vertices. Formally, a hypergraph H is a pair H = (X,E) where X is a set of elements, called nodes or vertices, and E is a set of non-empty subsets of X called hyperedges or links.
+</pre>
+</div>
+<div _canonical_uri="./images/Hypergraph.png" created="20140801173141769" modified="20140801173201571" title="Hypergraph.png" type="image/png">
+<pre></pre>
+</div>
+<div created="20140801175238366" modified="20140801175644741" tags="infoMap term" title="InformationMapping" type="text/vnd.tiddlywiki">
+<pre>Information Mapping is a research-based method used to analyze, organize and present information based on your audience’s needs and the purpose of the information. The method is technology, subject-matter and media independent.
+
+Robert Horn and his colleagues identified dozens of common documentation types, then analyzed them into structural components called &quot;information blocks&quot;. They identified over 200 common block types. These were assembled into &quot;information types&quot;.
+
+According to Horn and his colleagues, the seven most common information types are:
+
+* ''Procedure:'' A set of sequential steps to complete a task.
+* ''Process:'' An arrangement of tasks among disparate groups explaining how the groups interact. The description of a process explains what happens during different stages of time.
+* ''Principle:'' The underlying premises and rules of function giving rise to any number of techniques. These elements remain consistent, no matter what is happening.
+* ''Concept:'' Notions, ideas, thoughts, or opinions of a topic. Simple definitions are considered Concepts.
+* ''Fact:'' A bit of information that is true and that can be observed.
+* ''Structure:'' Something which can be divided into parts which have boundaries. Explains the component parts of a structure or item and how they interact.
+* ''Classification:'' The grouping of like items together and separating them from unlike items.
+
+The Information Mapping goal is measurable results that change the way people present information.
+</pre>
 </div>
 <div created="20140701091948533" modified="20140701203711293" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Learn From Others" type="text/vnd.tiddlywiki">
 <pre>The Internet (Ask.com), the dictonary (Dictionary.com), your friends (Facebook), your classmates, your teachers, your parents, your siblings, your mentors, online encyclopedias (Wikipedia) and experts (Wolfram Alpha). Every question or problem you face has been solved a million times before by other people. If you want answers, all you need to do is ask.</pre>
@@ -4502,6 +4587,9 @@ Many students that graduate with stellar grades end up performing horribly in th
 <div created="20140701091336278" modified="20140701102612564" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Make Studying Fun" type="text/vnd.tiddlywiki">
 <pre>Study with a friend, act things out, draw out diagrams, get your friends to quiz you, make bets with your friends on who can get the better grade, study outside in a park or make your studying into a game. Those who enjoy studying more always do better than those who don't. Even if the content isn't fun, you can always find ways to make the process more fun.</pre>
 </div>
+<div created="20140801180108946" modified="20140801180108946" tags="infoMap term km topic" title="MindMaps" type="text/vnd.tiddlywiki">
+<pre></pre>
+</div>
 <div created="20140701092032171" modified="20140701102935467" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Set Clear Objectives" type="text/vnd.tiddlywiki">
 <pre>Is your goal to maintain a 90% average in your classes? If that's the case, what exactly do you need to do to achieve that? How long do you have to study? What books do you have to read? What other activities or opportunities do you have to sacrifice (there is always a sacrifice)? Your goals and how you pursue them will always determine your outcome. Never rely on luck or chance. You control your future.</pre>
 </div>
@@ -4510,6 +4598,22 @@ Many students that graduate with stellar grades end up performing horribly in th
 </div>
 <div created="20140701090952319" modified="20140701102620266" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Study When You Study" type="text/vnd.tiddlywiki">
 <pre>The most important tip I have when it comes to studying is to not multi-task. You may think that Facebook, Youtube, TV, video games and internet surfing only have a slight impact on your studying, but we both know that's not true. Something as simple as turning your TV off can improve your productivity by 500%. Seriously. When you study, study. That's it.</pre>
+</div>
+<div _canonical_uri="./images/topicmap.png" created="20140801174128629" modified="20140801174128629" title="topicmap.png" type="image/png">
+<pre></pre>
+</div>
+<div created="20140801170446614" modified="20140801174949550" tags="term topic km infoMap" title="TopicMaps" type="text/vnd.tiddlywiki">
+<pre>Topic Maps is a standard for the representation and interchange of knowledge, with an emphasis on the //findability// of information. Topic maps were originally developed in the late 1990s as a way to represent [[back-of-the-book index]] structures so that multiple indexes from different sources could be merged. However, the developers quickly realized that with a little additional generalization, they could create a meta-model with potentially far wider application.
+
+A topic map represents information using
+
+* ''topics'', representing any concept, from people, countries, and organizations to software modules, individual files, and events,
+* ''associations'', representing [[hypergraph|Hypergraph]] relationships between topics, and
+* ''occurrences'' representing information resources relevant to a particular topic.
+
+Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only Topic Maps are ISO standards. Topic Maps are a form of SemanticWeb technology similar to RDF.
+
+{{topicmap.png}}</pre>
 </div>
 <div created="20140701092112841" modified="20140701102948563" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Work Hard, Play Hard" type="text/vnd.tiddlywiki">
 <pre>Doing too much of any one thing will always result in burn-out. The key to success in school and life is balance. You always need a mix of social, athletic, academic and self-interest activities. So, study hard when you need to, but don't forget to have fun as well. Your grades and your life will both improve as a result.</pre>
