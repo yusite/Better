@@ -197,8 +197,6 @@ Error message and password prompt
 
 <li>back-of-the-book-index.gif</li>
 
-<li>concept maps</li>
-
 <li>ConceptMaps</li>
 
 <li>Don't Excel In School, Excel In Life</li>
@@ -214,6 +212,8 @@ Error message and password prompt
 <li>Hypergraph.png</li>
 
 <li>InformationMapping</li>
+
+<li>joinwee.com - WEE</li>
 
 <li>Learn From Others</li>
 
@@ -235,6 +235,10 @@ Error message and password prompt
 
 <li>Work Hard, Play Hard</li>
 
+<li>开场白</li>
+
+<li>最近更新</li>
+
 </ul>
 </p>
 
@@ -252,16 +256,7 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>ConceptMaps: ConceptMaps.tid
-Hypergraph.png: Hypergraph.png.tid
-Hypergraph: Hypergraph.tid
-InformationMapping: InformationMapping.tid
-MindMaps: MindMaps.tid
-TopicMaps: TopicMaps.tid
-back-of-the-book index: back-of-the-book index.tid
-back-of-the-book-index.gif: back-of-the-book-index.gif.tid
-concept maps: concept maps.tid
-$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
+<pre>$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
@@ -290,18 +285,29 @@ $:/core/ui/SideBar/Tools: configurations/universal/sidebar/$__core_ui_SideBar_To
 $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
 $:/themes/tiddlywiki/vanilla/settings: configurations/universal/theme/$__themes_tiddlywiki_vanilla_settings.tid
+ConceptMaps: entries/ConceptMaps.tid
 Don't Excel In School, Excel In Life: entries/Don't Excel In School, Excel In Life.tid
 Eat Healthy: entries/Eat Healthy.tid
 Exercise Regularly: entries/Exercise Regularly.tid
 Have a Hobby: entries/Have a Hobby.tid
+Hypergraph: entries/Hypergraph.tid
+InformationMapping: entries/InformationMapping.tid
 Learn From Others: entries/Learn From Others.tid
 Leo's Top Ten Study Tips: entries/Leo's Top Ten Study Tips.tid
 Make Studying Fun: entries/Make Studying Fun.tid
+MindMaps: entries/MindMaps.tid
 Set Clear Objectives: entries/Set Clear Objectives.tid
 Sleep Properly: entries/Sleep Properly.tid
 Study When You Study: entries/Study When You Study.tid
+TopicMaps: entries/TopicMaps.tid
 Work Hard, Play Hard: entries/Work Hard, Play Hard.tid
-topicmap.png: topicmap.png.tid
+back-of-the-book index: entries/back-of-the-book index.tid
+joinwee.com - WEE: entries/joinwee.com - WEE.tid
+Hypergraph.png: images/Hypergraph.png.tid
+back-of-the-book-index.gif: images/back-of-the-book-index.gif.tid
+topicmap.png: images/topicmap.png.tid
+开场白: 开场白.tid
+最近更新: 最近更新.tid
 </pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core plugin" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.0.13-beta">
@@ -4204,13 +4210,14 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140801155734477" modified="20140801170020174" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]</pre>
+<div created="20140801155734477" modified="20140801184748740" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>开场白
+最近更新</pre>
 </div>
-<div current-tiddler="MindMaps" modified="20140801180418514" title="$:/HistoryList" type="application/json">
+<div current-tiddler="开场白" modified="20140801184900475" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;MindMaps&quot;
+        &quot;title&quot;: &quot;开场白&quot;
     }
 ]</pre>
 </div>
@@ -4336,11 +4343,11 @@ $title$
 <div created="20140801154235716" modified="20140801155652850" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Zac's notebook</pre>
 </div>
-<div list="MindMaps ConceptMaps TopicMaps [[concept maps]] [[Leo's Top Ten Study Tips]]" title="$:/StoryList">
+<div list="开场白 最近更新" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140801172000888" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
-<pre>\define toc-heading(caption,tag)
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140801182109785" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<pre>\define toc-heading(caption,tag,option)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
   &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
   &lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;$caption$&lt;/span&gt;
@@ -4354,7 +4361,7 @@ $title$
 
 &lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
 &lt;ol style=&quot;padding-left: 20px;&quot;&gt;
-    &lt;$list filter=&quot;[!is[system]tag[$tag$]tag[topic]sort[title]]&quot;&gt;
+    &lt;$list filter=&quot;[!is[system]tag[$tag$]$option$sort[title]]&quot;&gt;
       &lt;li style=&quot;line-height: 1.35em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
     &lt;/$list&gt;
 &lt;/ol&gt;
@@ -4366,9 +4373,10 @@ $title$
 &lt;div style=&quot;width:228px;&quot;&gt;
 &lt;ol style=&quot;padding-left:1.5em;&quot;&gt;
 
-&lt;li&gt;&lt;&lt;toc-heading &quot;Study Tips&quot; &quot;study&quot;&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;toc-heading &quot;Knowledge Management&quot; &quot;km&quot;&gt;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;&lt;toc-heading &quot;Terminology&quot; &quot;term&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Bookmarks&quot; &quot;bookmark&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Study Tips&quot; &quot;study&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Knowledge Management&quot; &quot;km&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Terminology&quot; &quot;term&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
 
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -4490,9 +4498,6 @@ tiddlerwidth: `660px`</pre>
 <div _canonical_uri="./images/back-of-the-book-index.gif" created="20140801172237659" modified="20140801172303920" title="back-of-the-book-index.gif" type="image/gif">
 <pre></pre>
 </div>
-<div created="20140801174501042" modified="20140801174600542" tags="term km topic infoMap" title="concept maps" type="text/vnd.tiddlywiki">
-<pre></pre>
-</div>
 <div created="20140801174501042" modified="20140801180018767" tags="term km topic infoMap" title="ConceptMaps" type="text/vnd.tiddlywiki">
 <pre>A concept map is a diagram that depicts suggested relationships between concepts. It is a graphical tool that designers, engineers, technical writers, and others use to organize and structure knowledge.
 
@@ -4548,6 +4553,15 @@ According to Horn and his colleagues, the seven most common information types ar
 
 The Information Mapping goal is measurable results that change the way people present information.
 </pre>
+</div>
+<div created="20140801181054869" modified="20140801181710333" tags="bookmark" title="joinwee.com - WEE" type="text/vnd.tiddlywiki">
+<pre>!!! 官方介绍
+
+“WEE”，来自“WE Education”两个单词的结合。WEE代表着我们是开放教育的设计与践行者，用我们的智慧创造更多好玩有趣的“三人行必有我师”的开放学习机会。
+
+!!! 我的介绍
+
+汇集了各种精品课程，上这个网站的目的是学习知识。</pre>
 </div>
 <div created="20140701091948533" modified="20140701203711293" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Learn From Others" type="text/vnd.tiddlywiki">
 <pre>The Internet (Ask.com), the dictonary (Dictionary.com), your friends (Facebook), your classmates, your teachers, your parents, your siblings, your mentors, online encyclopedias (Wikipedia) and experts (Wolfram Alpha). Every question or problem you face has been solved a million times before by other people. If you want answers, all you need to do is ask.</pre>
@@ -4617,6 +4631,12 @@ Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only
 </div>
 <div created="20140701092112841" modified="20140701102948563" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Work Hard, Play Hard" type="text/vnd.tiddlywiki">
 <pre>Doing too much of any one thing will always result in burn-out. The key to success in school and life is balance. You always need a mix of social, athletic, academic and self-interest activities. So, study hard when you need to, but don't forget to have fun as well. Your grades and your life will both improve as a result.</pre>
+</div>
+<div created="20140801184813916" modified="20140801184823978" title="开场白" type="text/vnd.tiddlywiki">
+<pre>这是开场白</pre>
+</div>
+<div created="20140801184831414" modified="20140801184844568" title="最近更新" type="text/vnd.tiddlywiki">
+<pre>最近更新</pre>
 </div>
 
 </div>
