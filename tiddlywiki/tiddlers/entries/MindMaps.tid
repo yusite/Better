@@ -1,6 +1,33 @@
 created: 20140801180108946
-modified: 20140801180108946
+modified: 20140802230736737
 tags: infoMap term km topic
 title: MindMaps
 type: text/vnd.tiddlywiki
 
+A mind map is a diagram used to visually organise information. A mind map is often created around a single concept, drawn as an image in the center of a blank landscape page, to which associated representations of ideas such as images, words and parts of words are added. Major ideas are connected directly to the central concept, and other ideas branch out from those.
+
+Mind maps can be drawn by hand, either as "rough notes" during a lecture, meeting or planning session, for example, or as higher quality pictures when more time is available.
+
+Mind maps are considered to be a type of SpiderDiagram. A similar concept in the 1970s was "idea sun bursting".
+
+!!! Mind map guidelines
+
+Buzan suggests the following guidelines for creating mind maps:
+
+# Start in the center with an image of the topic, using at least 3 colors.
+# Use images, symbols, codes, and dimensions throughout your mind map.
+# Select key words and print using upper or lower case letters.
+# Each word/image is best alone and sitting on its own line.
+# The lines should be connected, starting from the central image. The lines become thinner as they radiate out from the center.
+# Make the lines the same length as the word/image they support.
+# Use multiple colors throughout the mind map, for visual stimulation and also for encoding or grouping.
+# Develop your own personal style of mind mapping.
+# Use emphasis and show associations in your mind map.
+# Keep the mind map clear by using radial hierarchy or outlines to embrace your branches.
+
+!!! Differences from other visualizations
+
+* ConceptMaps - Mind maps differ from ConceptMaps in that mind maps focus on only one word or idea, whereas concept maps connect multiple words or ideas. Also, concept maps typically have text labels on their connecting lines/arms. Mind maps are based on radial hierarchies and tree structures denoting relationships with a central governing concept, whereas concept maps are based on connections between concepts in more diverse patterns. However, either can be part of a larger PersonalKnowledgeBase system.
+* ModellingGraphs - There is no rigorous right or wrong with mind maps, relying on the arbitrariness of mnemonic systems. A [[UML Diagram]] or a SemanticNetwork has structured elements modelling relationships, with lines connecting objects to indicate relationship. This is generally done in black and white with a clear and agreed iconography. Mind maps serve a different purpose: they help with memory and organization. Mind maps are collections of words structured by the mental context of the author with visual mnemonics, and, through the use of colour, icons and visual links, are informal and necessary to the proper functioning of the mind map.
+
+{{mindmap-history.png}}
