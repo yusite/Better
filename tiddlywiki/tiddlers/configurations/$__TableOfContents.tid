@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140801182109785
+modified: 20140802081952061
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -29,6 +29,8 @@ type: text/vnd.tiddlywiki
 
 <div style="font-size:small;">
 
+<$reveal type="nomatch" state="$:/state/toc/alltags" text="show">
+
 <div style="width:228px;">
 <ol style="padding-left:1.5em;">
 
@@ -42,6 +44,12 @@ type: text/vnd.tiddlywiki
 
 <hr/>
 
-<$button message="tw-new-tiddler" title={{$:/language/Buttons/NewTiddler/Hint}} aria-label={{$:/language/Buttons/NewTiddler/Caption}} param="$:/_new_digest" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New tiddler</span></$button> · [[Show all|$:/Overview]]
+<$button message="tw-new-tiddler" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New tiddler</span></$button> · <$button set="$:/state/toc/alltags" setTo="show" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">Tags</span></$button> · [[Show all|$:/Overview]]
+
+</$reveal>
+
+<$reveal type="match" state="$:/state/toc/alltags" text="show">
+<$transclude tiddler="$:/Overview/Tags" mode="block"/>
+</$reveal>
 
 </div>

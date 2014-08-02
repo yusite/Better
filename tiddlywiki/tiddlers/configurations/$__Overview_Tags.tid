@@ -1,0 +1,46 @@
+created: 20140802080102734
+list: bookmark infoMap km
+modified: 20140802135431641
+title: $:/Overview/Tags
+type: text/vnd.tiddlywiki
+
+\define tag-styles()
+background-color:$(backgroundColor)$;
+\end
+
+\define popup_state()
+$:/state/popup/$(popupState)$
+\end
+
+<div style="margin:-3px 0 7px 0;">
+<$button set="$:/state/toc/alltags" setTo="hide" class="btn-invisible">
+<span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">< back</span>
+</$button>&nbsp;&nbsp;/&nbsp;&nbsp;<$button message="tw-edit-tiddler" param="$:/Overview/Tags" class="btn-invisible">
+<span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">edit</span>
+</$button>
+</div>
+
+<$list filter="[list[$:/Overview/Tags]]">
+
+<$set name="popupState" value={{!!title}}>
+<$set name="backgroundColor" value={{!!color}}>
+
+<$button popup=<<popup_state>> class="btn-invisible tw-tag-label" style=<<tag-styles>>>
+<$view field="title" format="text" />
+</$button>&nbsp;&nbsp;(<$count filter="[all[current]tagging[]]"/>)
+
+</$set>
+
+<div style="width:225px;line-height:20px;margin:0.8em 0;">
+<$transclude mode="block"/>
+</div>
+
+<$reveal state=<<popup_state>> type="popup" position="below">
+<div class="tw-drop-down" style="min-width:200px;padding:0.6em 0;">
+<$list filter="[all[current]tagging[]]" template="$:/core/ui/ListItemTemplate"/>
+</div>
+</$reveal>
+
+</$set>
+
+</$list>
