@@ -1,15 +1,43 @@
 created: 20140801174501042
-modified: 20140804103208351
+modified: 20140804113827825
 tags: term km topic infoMap
 title: ConceptMaps
 type: text/vnd.tiddlywiki
 
-A concept map is a diagram that depicts suggested relationships between concepts. It is a graphical tool that designers, engineers, technical writers, and others use to organize and structure knowledge.
+A concept map is a diagram that depicts suggested relationships between concepts. It is a graphical tool that ''designers'', ''engineers'', ''technical writers'', and others use to organize and structure knowledge.
 
 A concept map typically represents ideas and information as boxes or circles, which it connects with labeled arrows in a downward-branching hierarchical structure. The relationship between concepts can be articulated in linking phrases such as causes, requires, or contributes to.
 
-The technique for visualizing these relationships among different concepts is called concept mapping. Concept maps define the ontology of computer systems, for example with the object-role modeling or Unified Modeling Language formalism.
+The technique for visualizing these relationships among different concepts is called concept mapping. Concept maps define the [[Ontology]] of computer systems, for example with the object-role modeling or UnifiedModelingLanguage formalism.
 
 !!! Concept mapping versus TopicMaps and MindMaps
 
-Concept maps are rather similar to TopicMaps (in that both allow to connect concepts or topics via graphs), while both can be contrasted with the similar idea of [[mind mapping|MindMaps]], which is often restricted to RadialHierarchies and TreeStructures. Among the various schema and techniques for visualizing ideas, processes, organizations, concept mapping, as developed by Joseph Novak is unique in its philosophical basis, which "makes concepts, and propositions composed of concepts, the central elements in the structure of knowledge and construction of meaning." Another contrast between Concept mapping and Mind mapping is the speed and spontaneity when a Mind map is created. A Mind map reflects what you think about a single topic, which can focus group brainstorming. A Concept map can be a map, a system view, of a real (abstract) system or set of concepts. Concept maps are more free form, as multiple hubs and clusters can be created, unlike mind maps, which fix on a single conceptual center.
+Concept maps are rather similar to TopicMaps (in that both allow to connect concepts or topics via graphs), while both can be contrasted with the similar idea of [[mind mapping|MindMaps]], which is often restricted to @@.nolink [[RadialHierarchies]]@@<<dict "RadialHierarchies" "25">> and @@.nolink [[TreeStructures]]@@<<dict "TreeStructures" "97">>. Among the various schema and techniques for visualizing ideas, processes, organizations, concept mapping, as developed by Joseph Novak is unique in its philosophical basis, which ''"makes concepts, and propositions composed of concepts, the central elements in the structure of knowledge and construction of meaning."'' Another contrast between Concept mapping and Mind mapping is the speed and spontaneity when a [[MindMap|MindMaps]] is created. A [[MindMap|MindMaps]] reflects what you think about a single topic, which can focus group brainstorming. A Concept map can be a map, a system view, of a real (abstract) system or set of concepts. Concept maps are more free form, as multiple hubs and clusters can be created, unlike mind maps, which fix on a single conceptual center.
+
+!! Use
+
+Concept maps are used to stimulate the generation of ideas, and are believed to aid creativity. Concept mapping is also sometimes used for BrainStorming. Although they are often personalized and @@.nolink [[idiosyncratic]]@@<<dict "idiosyncratic" "65">>, concept maps can be used to communicate complex ideas.
+
+Formalized concept maps are used in software design, where a common usage is UnifiedModelingLanguage diagramming amongst similar conventions and development methodologies.
+
+Concept mapping can also be seen as a first step in [[Ontology]]-building, and can also be used flexibly to represent formal argument.
+
+!!! Concept maps are widely used in education and business. Uses include:
+
+* Note taking and summarizing gleaning key concepts, their relationships and hierarchy from documents and source materials
+* New knowledge creation: e.g., transforming TacitKnowledge into an organizational resource, mapping team knowledge
+* Institutional knowledge preservation (retention), e.g., eliciting and mapping expert knowledge of employees prior to retirement
+* Collaborative knowledge modeling and the transfer of expert knowledge
+* Facilitating the creation of shared vision and shared understanding within a team or organization
+* Instructional design: concept maps used as Ausubelian "advance organizers" that provide an initial conceptual frame for subsequent information and learning.
+* Training: concept maps used as Ausubelian "advanced organizers" to represent the training context and its relationship to their jobs, to the organization's strategic objectives, to training goals.
+* Business Concept Mapping used as part of business analysis activities.
+* Increasing meaningful learning for example through writing activities where concept maps automatically generated from an essay are shown to the writer.
+* Communicating complex ideas and arguments
+* Examining the symmetry of complex ideas and arguments and associated terminology
+* Detailing the entire structure of an idea, train of thought, or line of argument (with the specific goal of exposing faults, errors, or gaps in one's own reasoning) for the scrutiny of others.
+* Enhancing [[Metacognition]] (learning to learn, and thinking about knowledge)
+* Improving language ability
+* Knowledge @@.nolink [[Elicitation]]@@<<dict "Elicitation" "71">>
+* Assessing learner understanding of learning objectives, concepts, and the relationship among those concepts
+* @@.nolink [[Lexicon]]@@<<dict "Lexicon" "56">> development

@@ -1,5 +1,5 @@
 created: 20140801180108946
-modified: 20140802230736737
+modified: 20140804112607227
 tags: infoMap term km topic
 title: MindMaps
 type: text/vnd.tiddlywiki
@@ -28,6 +28,6 @@ Buzan suggests the following guidelines for creating mind maps:
 !!! Differences from other visualizations
 
 * ConceptMaps - Mind maps differ from ConceptMaps in that mind maps focus on only one word or idea, whereas concept maps connect multiple words or ideas. Also, concept maps typically have text labels on their connecting lines/arms. Mind maps are based on radial hierarchies and tree structures denoting relationships with a central governing concept, whereas concept maps are based on connections between concepts in more diverse patterns. However, either can be part of a larger PersonalKnowledgeBase system.
-* ModellingGraphs - There is no rigorous right or wrong with mind maps, relying on the arbitrariness of mnemonic systems. A [[UML Diagram]] or a SemanticNetwork has structured elements modelling relationships, with lines connecting objects to indicate relationship. This is generally done in black and white with a clear and agreed iconography. Mind maps serve a different purpose: they help with memory and organization. Mind maps are collections of words structured by the mental context of the author with visual mnemonics, and, through the use of colour, icons and visual links, are informal and necessary to the proper functioning of the mind map.
+* ModellingGraphs - There is no rigorous right or wrong with mind maps, relying on the arbitrariness of mnemonic systems. A [[UML diagram|UnifiedModelingLanguage]] or a SemanticNetwork has structured elements modelling relationships, with lines connecting objects to indicate relationship. This is generally done in black and white with a clear and agreed iconography. Mind maps serve a different purpose: they help with memory and organization. Mind maps are collections of words structured by the mental context of the author with visual mnemonics, and, through the use of colour, icons and visual links, are informal and necessary to the proper functioning of the mind map.
 
 {{mindmap-history.png}}
