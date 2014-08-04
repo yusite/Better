@@ -1,5 +1,5 @@
 created: 20140801174501042
-modified: 20140801180018767
+modified: 20140804103208351
 tags: term km topic infoMap
 title: ConceptMaps
 type: text/vnd.tiddlywiki
@@ -11,3 +11,5 @@ A concept map typically represents ideas and information as boxes or circles, wh
 The technique for visualizing these relationships among different concepts is called concept mapping. Concept maps define the ontology of computer systems, for example with the object-role modeling or Unified Modeling Language formalism.
 
 !!! Concept mapping versus TopicMaps and MindMaps
+
+Concept maps are rather similar to TopicMaps (in that both allow to connect concepts or topics via graphs), while both can be contrasted with the similar idea of [[mind mapping|MindMaps]], which is often restricted to RadialHierarchies and TreeStructures. Among the various schema and techniques for visualizing ideas, processes, organizations, concept mapping, as developed by Joseph Novak is unique in its philosophical basis, which "makes concepts, and propositions composed of concepts, the central elements in the structure of knowledge and construction of meaning." Another contrast between Concept mapping and Mind mapping is the speed and spontaneity when a Mind map is created. A Mind map reflects what you think about a single topic, which can focus group brainstorming. A Concept map can be a map, a system view, of a real (abstract) system or set of concepts. Concept maps are more free form, as multiple hubs and clusters can be created, unlike mind maps, which fix on a single conceptual center.
