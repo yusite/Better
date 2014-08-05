@@ -157,6 +157,8 @@ Error message and password prompt
 
 <li>$:/HistoryList</li>
 
+<li>$:/Introduction</li>
+
 <li>$:/isEncrypted</li>
 
 <li>$:/macro/annotate</li>
@@ -169,13 +171,15 @@ Error message and password prompt
 
 <li>$:/macro/show</li>
 
-<li>$:/MindMapOverview</li>
+<li>$:/MindMap</li>
 
 <li>$:/Overview</li>
 
 <li>$:/Overview/Tags</li>
 
 <li>$:/plugins/tiddlywiki/highlight</li>
+
+<li>$:/RecentUpdate</li>
 
 <li>$:/SiteSubtitle</li>
 
@@ -196,6 +200,8 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/vanilla/settings</li>
 
 <li>$:/themes/zacwiki</li>
+
+<li>$:/ToDo</li>
 
 <li>back-of-the-book index</li>
 
@@ -263,6 +269,8 @@ Error message and password prompt
 
 <li>Tony Buzan</li>
 
+<li>TonyBuzan.jpg</li>
+
 <li>topic</li>
 
 <li>topicmap.png</li>
@@ -275,11 +283,7 @@ Error message and password prompt
 
 <li>Work Hard, Play Hard</li>
 
-<li>开场白</li>
-
 <li>怎样安排时间读书</li>
-
-<li>最近更新</li>
 
 </ul>
 </p>
@@ -298,14 +302,15 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>How To Use The Brain More Effectively: How To Use The Brain More Effectively.tid
-Tony Buzan: Tony Buzan.tid
-$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
-$:/MindMapOverview: configurations/$__MindMapOverview.tid
+<pre>$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
+$:/Introduction: configurations/$__Introduction.tid
+$:/MindMap: configurations/$__MindMap.tid
 $:/Overview/Tags: configurations/$__Overview_Tags.tid
+$:/RecentUpdate: configurations/$__RecentUpdate.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
+$:/ToDo: configurations/$__ToDo.tid
 $:/Overview: configurations/universal/$__Overview.tid
 $:/core/ui/SideBarLists: configurations/universal/$__core_ui_SideBarLists.tid
 $:/core/ui/ViewToolbar/close-others: configurations/universal/$__core_ui_ViewToolbar_close-others.tid
@@ -331,12 +336,12 @@ $:/core/ui/SideBar/Tools: configurations/universal/sidebar/$__core_ui_SideBar_To
 $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
 $:/themes/tiddlywiki/vanilla/settings: configurations/universal/theme/$__themes_tiddlywiki_vanilla_settings.tid
-digest: digest.tid
 ConceptMaps: entries/ConceptMaps.tid
 Don't Excel In School, Excel In Life: entries/Don't Excel In School, Excel In Life.tid
 Eat Healthy: entries/Eat Healthy.tid
 Exercise Regularly: entries/Exercise Regularly.tid
 Have a Hobby: entries/Have a Hobby.tid
+How To Use The Brain More Effectively: entries/How To Use The Brain More Effectively.tid
 Hypergraph: entries/Hypergraph.tid
 InformationMapping: entries/InformationMapping.tid
 Learn From Others: entries/Learn From Others.tid
@@ -347,25 +352,26 @@ RadialHierarchies: entries/RadialHierarchies.tid
 Set Clear Objectives: entries/Set Clear Objectives.tid
 Sleep Properly: entries/Sleep Properly.tid
 Study When You Study: entries/Study When You Study.tid
+Tony Buzan: entries/Tony Buzan.tid
 TopicMaps: entries/TopicMaps.tid
 TreeStructures: entries/TreeStructures.tid
 Work Hard, Play Hard: entries/Work Hard, Play Hard.tid
 back-of-the-book index: entries/back-of-the-book index.tid
 joinwee.com - WEE: entries/joinwee.com - WEE.tid
-开场白: entries/开场白.tid
 怎样安排时间读书: entries/怎样安排时间读书.tid
-最近更新: entries/最近更新.tid
 Hypergraph.png: images/Hypergraph.png.tid
+TonyBuzan.jpg: images/TonyBuzan.jpg
 back-of-the-book-index.gif: images/back-of-the-book-index.gif.tid
 cluster-radial.png: images/cluster-radial.png.tid
 mindmap-history.png: images/mindmap-history.png.tid
 topicmap.png: images/topicmap.png.tid
 treeStructure.png: images/treeStructure.png.tid
-person: person.tid
-quote: quote.tid
 bookmark: tags/bookmark.tid
+digest: tags/digest.tid
 infoMap: tags/infoMap.tid
 km: tags/km.tid
+person: tags/person.tid
+quote: tags/quote.tid
 study: tags/study.tid
 tag: tags/tag.tid
 term: tags/term.tid
@@ -4273,17 +4279,35 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140801155734477" modified="20140805132840444" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>开场白
-最近更新
-$:/MindMapOverview</pre>
+<div created="20140801155734477" modified="20140805150840863" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>$:/MindMap
+$:/Introduction
+$:/RecentUpdate
+$:/ToDo</pre>
 </div>
-<div current-tiddler="开场白" modified="20140805143724998" title="$:/HistoryList" type="application/json">
+<div current-tiddler="$:/MindMap" modified="20140805151725312" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;开场白&quot;
+        &quot;title&quot;: &quot;$:/MindMap&quot;
     }
 ]</pre>
+</div>
+<div created="20140801184813916" modified="20140805150556445" title="$:/Introduction" type="text/vnd.tiddlywiki">
+<pre>这是于子杰的个人笔记本，也是我个人知识管理的试验田。我所有的知识将汇聚于此。左边的 Contents 是目录。
+
+&gt; ''不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握'' - warfalcon
+
+!!! 工具条
+
+* New：新建条目
+* Map：笔记本的思维导图
+* Tags：所有的标签一览及它们的作用
+* All：笔记本所有文件详细目录
+
+!!! 要求
+
+* 所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。
+* 笔记本中的条目，尽量自己写出来，不使用别人的摘抄。</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -4364,14 +4388,14 @@ $title$
 \end
 </pre>
 </div>
-<div created="20140805131139078" modified="20140805131311664" title="$:/MindMapOverview" type="text/vnd.tiddlywiki">
+<div created="20140805131139078" modified="20140805150413836" title="$:/MindMap" type="text/vnd.tiddlywiki">
 <pre>&lt;iframe style=&quot;width:1000px;height:600px;border: 1px
-solid black&quot; src=&quot;https://app.wisemapping.com/c/maps/221735/embed?zoom=0.9&quot;&gt; &lt;/iframe&gt;</pre>
+solid black&quot; src=&quot;https://app.wisemapping.com/c/maps/221735/embed?zoom=1&quot;&gt; &lt;/iframe&gt;</pre>
 </div>
 <div created="20140712230150732" modified="20140712230202823" title="$:/Overview" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
-<div created="20140802080102734" list="bookmark digest infoMap km person quote study term tip topic" modified="20140805143635273" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
+<div created="20140802080102734" list="bookmark digest infoMap km person quote study term tip topic" modified="20140805150458891" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
 <pre>\define tag-styles()
 background-color:$(backgroundColor)$;
 \end
@@ -4415,7 +4439,7 @@ $:/state/popup/$(popupState)$
 
 &lt;hr&gt;
 
-&lt;$list filter=&quot;[untagged[]!is[system]field:type[text/vnd.tiddlywiki]!title[开场白]!title[最近更新]]&quot; template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;</pre>
+&lt;$list filter=&quot;[untagged[]!is[system]field:type[text/vnd.tiddlywiki]]&quot; template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;</pre>
 </div>
 <div author="JoaoBolila" dependents="" description="Highlight.js plugin for TiddlyWiki5" plugin-type="plugin" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.0.13-beta">
 <pre>{
@@ -4451,13 +4475,26 @@ $:/state/popup/$(popupState)$
     }
 }</pre>
 </div>
+<div created="20140801184831414" modified="20140805150743135" title="$:/RecentUpdate" type="text/vnd.tiddlywiki">
+<pre>&lt;ul&gt;
+&lt;$list filter=&quot;[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]&quot;&gt;
+&lt;li&gt;
+&lt;h4 style=&quot;font-weight:normal;&quot;&gt;
+&lt;$link to={{!!title}}&gt;
+&lt;$view tiddler={{!!title}} field=&quot;title&quot; format=&quot;text&quot;/&gt;
+&lt;/$link&gt;
+&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/$list&gt;
+&lt;/ul&gt;</pre>
+</div>
 <div created="20140801154255846" modified="20140801155124762" title="$:/SiteSubtitle" type="text/vnd.tiddlywiki">
 <pre>The repository of knowledge &amp; ideas </pre>
 </div>
 <div created="20140801154235716" modified="20140801155652850" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Zac's notebook</pre>
 </div>
-<div list="开场白 最近更新 $:/MindMapOverview" title="$:/StoryList">
+<div list="$:/MindMap $:/Introduction $:/RecentUpdate $:/ToDo" title="$:/StoryList">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805135358076" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
@@ -4612,6 +4649,14 @@ tiddlerwidth: `660px`</pre>
         }
     }
 }</pre>
+</div>
+<div created="20140805145709304" modified="20140805150116426" title="$:/ToDo" type="text/vnd.tiddlywiki">
+<pre>* [[个人知识管理的方法|http://jianshu.io/p/dbdac17eb9ff]]
+* [[雕爷之商业思考篇|http://cnfeat.com/2014/07/31/2014-07-31-diaoye-chuangye-5/]]
+* [[加油站的产品观|http://jianshu.io/p/e2bfc6171595]]
+* [[个人知识管理的方法(WEE)|http://joinwee.com/lesson/109/]]
+* [[常見知識管理工具與方法|http://www.eland.com.tw/support/kcolumn/topic1_3]]
+* [[MBAlib 知识管理|http://wiki.mbalib.com/wiki/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86]]</pre>
 </div>
 <div created="20140801172059910" modified="20140801172428441" tags="term" title="back-of-the-book index" type="text/vnd.tiddlywiki">
 <pre>A back-of-the-book index (or just book index) is a collection of entries, often alphabetically arranged in an index, made to allow users to locate information in a given book (or related document).
@@ -4847,16 +4892,24 @@ Buzan suggests the following guidelines for creating mind maps:
 <div color="#82c784" created="20140802140837540" modified="20140805143019162" tags="tag" title="tip" type="text/vnd.tiddlywiki">
 <pre>帮助自己提高的小技巧、小技术</pre>
 </div>
-<div created="20140805141843942" modified="20140805142343567" tags="person" title="Tony Buzan" type="text/vnd.tiddlywiki">
-<pre>[[思维导图|MindMaps]]的发明人，大众心理学作家。
+<div created="20140805141843942" modified="20140805151636088" tags="person" title="Tony Buzan" type="text/vnd.tiddlywiki">
+<pre>[img class=&quot;right&quot;[TonyBuzan.jpg]]
 
-主题有：
+[[思维导图|MindMaps]]的发明人，大众心理学作家。
+
+&gt; Anthony &quot;Tony&quot; Peter Buzan (born 2 June 1942) is an English author and educational consultant. He is a proponent of the techniques of mind mapping and mental literacy.
+
+研究主题有：
 
 * genius quotient (GQ)
 * spiritual intelligence
 * memory
 * creativity
-* speed reading</pre>
+* speed reading
+</pre>
+</div>
+<div _canonical_uri="./images/TonyBuzan.jpg" created="20140805151302536" modified="20140805151313641" title="TonyBuzan.jpg" type="image/jpeg">
+<pre></pre>
 </div>
 <div color="#d66ac9" created="20140802135954477" modified="20140805142934036" tags="tag" title="topic" type="text/vnd.tiddlywiki">
 <pre>所有主题、话题，讨论的内容，并显示在 TOC 里面</pre>
@@ -4887,23 +4940,6 @@ Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only
 </div>
 <div created="20140701092112841" modified="20140701102948563" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Work Hard, Play Hard" type="text/vnd.tiddlywiki">
 <pre>Doing too much of any one thing will always result in burn-out. The key to success in school and life is balance. You always need a mix of social, athletic, academic and self-interest activities. So, study hard when you need to, but don't forget to have fun as well. Your grades and your life will both improve as a result.</pre>
-</div>
-<div created="20140801184813916" modified="20140805142208868" title="开场白" type="text/vnd.tiddlywiki">
-<pre>这是于子杰的个人笔记本，也是我个人知识管理的试验田。我所有的知识将汇聚于此。左边的 Contents 是目录。
-
-&gt; ''不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握'' - warfalcon
-
-!!! 工具条
-
-* New：新建条目
-* Map：笔记本的思维导图
-* Tags：所有的标签一览及它们的作用
-* All：笔记本所有文件详细目录
-
-!!! 要求
-
-* 所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。
-* 笔记本中的条目，尽量自己写出来，不使用别人的摘抄。</pre>
 </div>
 <div created="20140804115648294" modified="20140804215606544" source="http://www.douban.com/thing/759/?on=1058705" tags="digest study tip topic" title="怎样安排时间读书" type="text/vnd.tiddlywiki">
 <pre>!!! 最近三五年平均每年读过的书都在100-200本左右，经常被问你怎么有那么多的时间去读书呢？
@@ -4943,19 +4979,6 @@ Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only
 我是warfalcon ，微信（read01）的目标是让你成为行动者而不是阅读者，不定期分享一些五花八门的读书笔记和书评，每天更新。
 
 2013年在微信上分享了100多本书的心得和笔记，欢迎关注。</pre>
-</div>
-<div created="20140801184831414" modified="20140804215736634" title="最近更新" type="text/vnd.tiddlywiki">
-<pre>&lt;ul&gt;
-&lt;$list filter=&quot;[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]&quot;&gt;
-&lt;li&gt;
-&lt;h4 style=&quot;font-weight:normal;&quot;&gt;
-&lt;$link to={{!!title}}&gt;
-&lt;$view tiddler={{!!title}} field=&quot;title&quot; format=&quot;text&quot;/&gt;
-&lt;/$link&gt;
-&lt;/h4&gt;
-&lt;/li&gt;
-&lt;/$list&gt;
-&lt;/ul&gt;</pre>
 </div>
 
 </div>
