@@ -1,6 +1,6 @@
 created: 20140802080102734
 list: bookmark digest infoMap km person quote study term tip topic
-modified: 20140805143635273
+modified: 20140805150458891
 title: $:/Overview/Tags
 type: text/vnd.tiddlywiki
 
@@ -47,4 +47,4 @@ $:/state/popup/$(popupState)$
 
 <hr>
 
-<$list filter="[untagged[]!is[system]field:type[text/vnd.tiddlywiki]!title[开场白]!title[最近更新]]" template="$:/core/ui/ListItemTemplate"/>
+<$list filter="[untagged[]!is[system]field:type[text/vnd.tiddlywiki]]" template="$:/core/ui/ListItemTemplate"/>
