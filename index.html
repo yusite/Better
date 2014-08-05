@@ -4279,16 +4279,15 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140801155734477" modified="20140805150840863" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>$:/MindMap
-$:/Introduction
+<div created="20140801155734477" modified="20140805153857645" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>$:/Introduction
 $:/RecentUpdate
 $:/ToDo</pre>
 </div>
-<div current-tiddler="$:/MindMap" modified="20140805151725312" title="$:/HistoryList" type="application/json">
+<div current-tiddler="$:/Introduction" modified="20140805154353320" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;$:/MindMap&quot;
+        &quot;title&quot;: &quot;$:/Introduction&quot;
     }
 ]</pre>
 </div>
@@ -4388,8 +4387,8 @@ $title$
 \end
 </pre>
 </div>
-<div created="20140805131139078" modified="20140805150413836" title="$:/MindMap" type="text/vnd.tiddlywiki">
-<pre>&lt;iframe style=&quot;width:1000px;height:600px;border: 1px
+<div created="20140805131139078" modified="20140805154336152" title="$:/MindMap" type="text/vnd.tiddlywiki">
+<pre>&lt;iframe style=&quot;width:570px;height:570px;border: 1px
 solid black&quot; src=&quot;https://app.wisemapping.com/c/maps/221735/embed?zoom=1&quot;&gt; &lt;/iframe&gt;</pre>
 </div>
 <div created="20140712230150732" modified="20140712230202823" title="$:/Overview" type="text/vnd.tiddlywiki">
@@ -4494,10 +4493,10 @@ $:/state/popup/$(popupState)$
 <div created="20140801154235716" modified="20140801155652850" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Zac's notebook</pre>
 </div>
-<div list="$:/MindMap $:/Introduction $:/RecentUpdate $:/ToDo" title="$:/StoryList">
+<div list="$:/Introduction $:/RecentUpdate $:/ToDo" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805135358076" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805153926192" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>\define toc-heading(caption,tag,option)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
   &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
@@ -4537,7 +4536,7 @@ $:/state/popup/$(popupState)$
 
 &lt;hr/&gt;
 
-&lt;$button message=&quot;tw-new-tiddler&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;New&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;&lt;$button to=&quot;$:/MindMapOverview&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Map&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;&lt;$button set=&quot;$:/state/toc/alltags&quot; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Tags&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;[[All|$:/Overview]]
+&lt;$button message=&quot;tw-new-tiddler&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;New&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;/&amp;nbsp;&amp;nbsp;&lt;$button to=&quot;$:/MindMap&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Map&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;/&amp;nbsp;&amp;nbsp;&lt;$button set=&quot;$:/state/toc/alltags&quot; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Tags&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;/&amp;nbsp;&amp;nbsp;[[All|$:/Overview]]
 
 &lt;/$reveal&gt;
 
