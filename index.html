@@ -207,6 +207,8 @@ Error message and password prompt
 
 <li>ConceptMaps</li>
 
+<li>digest</li>
+
 <li>Don't Excel In School, Excel In Life</li>
 
 <li>Eat Healthy</li>
@@ -214,6 +216,8 @@ Error message and password prompt
 <li>Exercise Regularly</li>
 
 <li>Have a Hobby</li>
+
+<li>How To Use The Brain More Effectively</li>
 
 <li>Hypergraph</li>
 
@@ -237,6 +241,10 @@ Error message and password prompt
 
 <li>MindMaps</li>
 
+<li>person</li>
+
+<li>quote</li>
+
 <li>RadialHierarchies</li>
 
 <li>Set Clear Objectives</li>
@@ -252,6 +260,8 @@ Error message and password prompt
 <li>term</li>
 
 <li>tip</li>
+
+<li>Tony Buzan</li>
 
 <li>topic</li>
 
@@ -288,8 +298,10 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>$:/MindMapOverview: $__MindMapOverview.tid
+<pre>How To Use The Brain More Effectively: How To Use The Brain More Effectively.tid
+Tony Buzan: Tony Buzan.tid
 $:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
+$:/MindMapOverview: configurations/$__MindMapOverview.tid
 $:/Overview/Tags: configurations/$__Overview_Tags.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
@@ -319,6 +331,7 @@ $:/core/ui/SideBar/Tools: configurations/universal/sidebar/$__core_ui_SideBar_To
 $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
 $:/themes/tiddlywiki/vanilla/settings: configurations/universal/theme/$__themes_tiddlywiki_vanilla_settings.tid
+digest: digest.tid
 ConceptMaps: entries/ConceptMaps.tid
 Don't Excel In School, Excel In Life: entries/Don't Excel In School, Excel In Life.tid
 Eat Healthy: entries/Eat Healthy.tid
@@ -348,6 +361,8 @@ cluster-radial.png: images/cluster-radial.png.tid
 mindmap-history.png: images/mindmap-history.png.tid
 topicmap.png: images/topicmap.png.tid
 treeStructure.png: images/treeStructure.png.tid
+person: person.tid
+quote: quote.tid
 bookmark: tags/bookmark.tid
 infoMap: tags/infoMap.tid
 km: tags/km.tid
@@ -4263,7 +4278,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 最近更新
 $:/MindMapOverview</pre>
 </div>
-<div current-tiddler="开场白" modified="20140805133621532" title="$:/HistoryList" type="application/json">
+<div current-tiddler="开场白" modified="20140805143724998" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;开场白&quot;
@@ -4356,7 +4371,7 @@ solid black&quot; src=&quot;https://app.wisemapping.com/c/maps/221735/embed?zoom
 <div created="20140712230150732" modified="20140712230202823" title="$:/Overview" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
-<div created="20140802080102734" list="bookmark infoMap km study term tip topic" modified="20140804111314451" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
+<div created="20140802080102734" list="bookmark digest infoMap km person quote study term tip topic" modified="20140805143635273" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
 <pre>\define tag-styles()
 background-color:$(backgroundColor)$;
 \end
@@ -4445,7 +4460,7 @@ $:/state/popup/$(popupState)$
 <div list="开场白 最近更新 $:/MindMapOverview" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805131845640" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805135358076" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>\define toc-heading(caption,tag,option)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
   &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
@@ -4477,6 +4492,7 @@ $:/state/popup/$(popupState)$
 &lt;li&gt;&lt;&lt;toc-heading &quot;Bookmarks&quot; &quot;bookmark&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Study Tips&quot; &quot;study&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Knowledge Management&quot; &quot;km&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;Wise Words&quot; &quot;quote&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Terminology&quot; &quot;term&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
 
 &lt;/ol&gt;
@@ -4650,6 +4666,9 @@ Concept mapping can also be seen as a first step in [[Ontology]]-building, and c
 * Assessing learner understanding of learning objectives, concepts, and the relationship among those concepts
 * @@.nolink [[Lexicon]]@@&lt;&lt;dict &quot;Lexicon&quot; &quot;56&quot;&gt;&gt; development</pre>
 </div>
+<div color="#88be91" created="20140805142440944" modified="20140805142803587" tags="tag" title="digest" type="text/vnd.tiddlywiki">
+<pre>网络上有思想性的文章，值得收藏的片段。</pre>
+</div>
 <div created="20140701091709376" modified="20140701203040294" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Don't Excel In School, Excel In Life" type="text/vnd.tiddlywiki">
 <pre>School is meant to prepare you for your adult, working life. But it doesn't resemble an adult's working life. There are no exams, there are no teachers, there are no grades, there is no homework. Instead, there are interpersonal relationships, practical knowledge and experience, real-life consequences for mistakes, and self-lead experiments and projects.
 
@@ -4663,6 +4682,20 @@ Many students that graduate with stellar grades end up performing horribly in th
 </div>
 <div created="20140701091614979" modified="20140701102546295" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Have a Hobby" type="text/vnd.tiddlywiki">
 <pre>School should never ever be your one and only thing in life. You should always have friends and you should always have a hobby. Universities and colleges are increasingly implementing broad based admissions standards that weigh extra-curricular activities just as importantly as academic performance. The same goes for employers. In fact, almost all employers look for experience, leadership and practical knowledge before your grades.</pre>
+</div>
+<div created="20140805135408234" modified="20140805141616604" source="https://www.youtube.com/watch?v=BXJDJ8rqjLY" tags="quote topic" title="How To Use The Brain More Effectively" type="text/vnd.tiddlywiki">
+<pre>&gt; Have the attitude that you ''can'', believe that you brain ''can'', and ''daydream'' what ever you want to come true, and then ''work'' to make it come true, that's brilliance, and ''anyone'' can do it. - [[Tony Buzan]]
+
+---
+
+# ''Realize the power of your brain.''
+#&gt; Believe in yourself! You have a brain that smarter than your computer, and it has more potential than you ever imagined.
+# ''Make your brain a hobby.''
+#&gt; Ok, so you’re a genius. Now what? Start by paying attention to your brain. And not just abstaining from TV for 30 minutes. Go to the library and read. Learn to do something new, like play an instrument or study a foreign language. Write a book. Whatever you choose to do, make sure it’s both fun and educational. Focus on growing the potential of your mind. When you focus, it will expand.
+# ''Use both the left and right side of your brain.''
+# ''Daydream.''
+#&gt; Yes, daydream! Daydreaming is essential to being genius. But daydream big. Have a big vision. And commit to fulfilling your daydream. Don’t stop until you achieve your dreams.
+</pre>
 </div>
 <div created="20140801172906819" modified="20140804111123312" source="http://blog.csdn.net/raodotcong/article/details/6429991" tags="term" title="Hypergraph" type="text/vnd.tiddlywiki">
 <pre>!!! 超图（Hypergraph）是什么
@@ -4679,8 +4712,8 @@ In mathematics, a hypergraph is a generalization of a graph, where an edge can c
 <div _canonical_uri="./images/Hypergraph.png" created="20140801173141769" modified="20140801173201571" title="Hypergraph.png" type="image/png">
 <pre></pre>
 </div>
-<div color="#65beb9" created="20140802115040398" modified="20140804110043333" tags="tag" title="infoMap" type="text/vnd.tiddlywiki">
-<pre>所有关于 Information Mapping 有关的条目。</pre>
+<div color="#65beb9" created="20140802115040398" modified="20140805135045091" tags="tag" title="infoMap" type="text/vnd.tiddlywiki">
+<pre>所有关于 Information Mapping 的条目</pre>
 </div>
 <div created="20140801175238366" modified="20140801175644741" tags="infoMap term" title="InformationMapping" type="text/vnd.tiddlywiki">
 <pre>Information Mapping is a research-based method used to analyze, organize and present information based on your audience’s needs and the purpose of the information. The method is technology, subject-matter and media independent.
@@ -4709,8 +4742,8 @@ The Information Mapping goal is measurable results that change the way people pr
 
 汇集了各种精品课程，上这个网站的目的是学习知识。</pre>
 </div>
-<div color="#e87875" created="20140802115336299" modified="20140804110057899" tags="tag" title="km" type="text/vnd.tiddlywiki">
-<pre>所有关于知识管理有关的条目。</pre>
+<div color="#e87875" created="20140802115336299" modified="20140805135100083" tags="tag" title="km" type="text/vnd.tiddlywiki">
+<pre>所有关于知识管理的条目</pre>
 </div>
 <div created="20140701091948533" modified="20140701203711293" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Learn From Others" type="text/vnd.tiddlywiki">
 <pre>The Internet (Ask.com), the dictonary (Dictionary.com), your friends (Facebook), your classmates, your teachers, your parents, your siblings, your mentors, online encyclopedias (Wikipedia) and experts (Wolfram Alpha). Every question or problem you face has been solved a million times before by other people. If you want answers, all you need to do is ask.</pre>
@@ -4782,6 +4815,12 @@ Buzan suggests the following guidelines for creating mind maps:
 
 {{mindmap-history.png}}</pre>
 </div>
+<div color="#69ace1" created="20140805142623637" modified="20140805142819915" tags="tag" title="person" type="text/vnd.tiddlywiki">
+<pre>人物介绍</pre>
+</div>
+<div color="#e1c99e" created="20140805142653021" modified="20140805143701386" tags="tag" title="quote" type="text/vnd.tiddlywiki">
+<pre>名人名言，必须是权威所说，而且比较简短</pre>
+</div>
 <div created="20140804103235987" modified="20140804103806917" tags="term infoMap" title="RadialHierarchies" type="text/vnd.tiddlywiki">
 <pre>放射状的层次结构。
 
@@ -4793,8 +4832,8 @@ Buzan suggests the following guidelines for creating mind maps:
 <div created="20140701091709368" modified="20140701102536921" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Sleep Properly" type="text/vnd.tiddlywiki">
 <pre>Humans are not designed to sleep on irregular schedules. Before the invention of the light bulb, we always slept around the same time when it got dark and woke up around the same time when it was bright. I guarantee you that if you manage to sleep at the same time every day for one week, you will feel noticeably more alert, energetic and smart. One big reason why you feel more energetic in the summer is because the additional sunlight helps to regulate your sleep.</pre>
 </div>
-<div color="#e95cb8" created="20140802141403348" modified="20140804110118057" tags="tag" title="study" type="text/vnd.tiddlywiki">
-<pre>各种学习技巧，跟学习有关的话题。</pre>
+<div color="#dc8b4e" created="20140802141403348" modified="20140805142954180" tags="tag" title="study" type="text/vnd.tiddlywiki">
+<pre>各种学习技巧，跟学习有关的话题</pre>
 </div>
 <div created="20140701090952319" modified="20140701102620266" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Study When You Study" type="text/vnd.tiddlywiki">
 <pre>The most important tip I have when it comes to studying is to not multi-task. You may think that Facebook, Youtube, TV, video games and internet surfing only have a slight impact on your studying, but we both know that's not true. Something as simple as turning your TV off can improve your productivity by 500%. Seriously. When you study, study. That's it.</pre>
@@ -4802,14 +4841,25 @@ Buzan suggests the following guidelines for creating mind maps:
 <div created="20140804110145130" modified="20140804110217158" tags="tag" title="tag" type="text/vnd.tiddlywiki">
 <pre>所有属于 tag 的 tiddler</pre>
 </div>
-<div color="#a5c2d1" created="20140802141219366" modified="20140804110130807" tags="tag" title="term" type="text/vnd.tiddlywiki">
-<pre>各种领域的术语，有助于理解该领域的专业词汇。</pre>
+<div color="#a5c2d1" created="20140802141219366" modified="20140805135128136" tags="tag" title="term" type="text/vnd.tiddlywiki">
+<pre>各种领域的术语，有助于理解该领域的专业词汇</pre>
 </div>
-<div color="#9dd241" created="20140802140837540" modified="20140804110239054" tags="tag" title="tip" type="text/vnd.tiddlywiki">
+<div color="#82c784" created="20140802140837540" modified="20140805143019162" tags="tag" title="tip" type="text/vnd.tiddlywiki">
 <pre>帮助自己提高的小技巧、小技术</pre>
 </div>
-<div color="#eb8a06" created="20140802135954477" modified="20140804110250507" tags="tag" title="topic" type="text/vnd.tiddlywiki">
-<pre>所有主题、话题，讨论的内容。并显示在 TOC 里面。</pre>
+<div created="20140805141843942" modified="20140805142343567" tags="person" title="Tony Buzan" type="text/vnd.tiddlywiki">
+<pre>[[思维导图|MindMaps]]的发明人，大众心理学作家。
+
+主题有：
+
+* genius quotient (GQ)
+* spiritual intelligence
+* memory
+* creativity
+* speed reading</pre>
+</div>
+<div color="#d66ac9" created="20140802135954477" modified="20140805142934036" tags="tag" title="topic" type="text/vnd.tiddlywiki">
+<pre>所有主题、话题，讨论的内容，并显示在 TOC 里面</pre>
 </div>
 <div _canonical_uri="./images/topicmap.png" created="20140801174128629" modified="20140801174128629" title="topicmap.png" type="image/png">
 <pre></pre>
@@ -4838,10 +4888,10 @@ Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only
 <div created="20140701092112841" modified="20140701102948563" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Work Hard, Play Hard" type="text/vnd.tiddlywiki">
 <pre>Doing too much of any one thing will always result in burn-out. The key to success in school and life is balance. You always need a mix of social, athletic, academic and self-interest activities. So, study hard when you need to, but don't forget to have fun as well. Your grades and your life will both improve as a result.</pre>
 </div>
-<div created="20140801184813916" modified="20140805132520073" title="开场白" type="text/vnd.tiddlywiki">
+<div created="20140801184813916" modified="20140805142208868" title="开场白" type="text/vnd.tiddlywiki">
 <pre>这是于子杰的个人笔记本，也是我个人知识管理的试验田。我所有的知识将汇聚于此。左边的 Contents 是目录。
 
-&gt; 不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握。- warfalcon
+&gt; ''不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握'' - warfalcon
 
 !!! 工具条
 
@@ -4852,7 +4902,8 @@ Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only
 
 !!! 要求
 
-所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。</pre>
+* 所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。
+* 笔记本中的条目，尽量自己写出来，不使用别人的摘抄。</pre>
 </div>
 <div created="20140804115648294" modified="20140804215606544" source="http://www.douban.com/thing/759/?on=1058705" tags="digest study tip topic" title="怎样安排时间读书" type="text/vnd.tiddlywiki">
 <pre>!!! 最近三五年平均每年读过的书都在100-200本左右，经常被问你怎么有那么多的时间去读书呢？
