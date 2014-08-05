@@ -169,6 +169,8 @@ Error message and password prompt
 
 <li>$:/macro/show</li>
 
+<li>$:/MindMapOverview</li>
+
 <li>$:/Overview</li>
 
 <li>$:/Overview/Tags</li>
@@ -200,6 +202,8 @@ Error message and password prompt
 <li>back-of-the-book-index.gif</li>
 
 <li>bookmark</li>
+
+<li>cluster-radial.png</li>
 
 <li>ConceptMaps</li>
 
@@ -233,6 +237,8 @@ Error message and password prompt
 
 <li>MindMaps</li>
 
+<li>RadialHierarchies</li>
+
 <li>Set Clear Objectives</li>
 
 <li>Sleep Properly</li>
@@ -240,6 +246,8 @@ Error message and password prompt
 <li>study</li>
 
 <li>Study When You Study</li>
+
+<li>tag</li>
 
 <li>term</li>
 
@@ -251,9 +259,15 @@ Error message and password prompt
 
 <li>TopicMaps</li>
 
+<li>treeStructure.png</li>
+
+<li>TreeStructures</li>
+
 <li>Work Hard, Play Hard</li>
 
 <li>开场白</li>
+
+<li>怎样安排时间读书</li>
 
 <li>最近更新</li>
 
@@ -274,7 +288,8 @@ Error message and password prompt
 <pre>yes</pre>
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
-<pre>$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
+<pre>$:/MindMapOverview: $__MindMapOverview.tid
+$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
 $:/Overview/Tags: configurations/$__Overview_Tags.tid
 $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
@@ -315,23 +330,29 @@ Learn From Others: entries/Learn From Others.tid
 Leo's Top Ten Study Tips: entries/Leo's Top Ten Study Tips.tid
 Make Studying Fun: entries/Make Studying Fun.tid
 MindMaps: entries/MindMaps.tid
+RadialHierarchies: entries/RadialHierarchies.tid
 Set Clear Objectives: entries/Set Clear Objectives.tid
 Sleep Properly: entries/Sleep Properly.tid
 Study When You Study: entries/Study When You Study.tid
 TopicMaps: entries/TopicMaps.tid
+TreeStructures: entries/TreeStructures.tid
 Work Hard, Play Hard: entries/Work Hard, Play Hard.tid
 back-of-the-book index: entries/back-of-the-book index.tid
 joinwee.com - WEE: entries/joinwee.com - WEE.tid
 开场白: entries/开场白.tid
+怎样安排时间读书: entries/怎样安排时间读书.tid
 最近更新: entries/最近更新.tid
 Hypergraph.png: images/Hypergraph.png.tid
 back-of-the-book-index.gif: images/back-of-the-book-index.gif.tid
+cluster-radial.png: images/cluster-radial.png.tid
+mindmap-history.png: images/mindmap-history.png.tid
 topicmap.png: images/topicmap.png.tid
-mindmap-history.png: mindmap-history.png.tid
+treeStructure.png: images/treeStructure.png.tid
 bookmark: tags/bookmark.tid
 infoMap: tags/infoMap.tid
 km: tags/km.tid
 study: tags/study.tid
+tag: tags/tag.tid
 term: tags/term.tid
 tip: tags/tip.tid
 topic: tags/topic.tid
@@ -4237,11 +4258,12 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140801155734477" modified="20140801184748740" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<div created="20140801155734477" modified="20140805132840444" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
 <pre>开场白
-最近更新</pre>
+最近更新
+$:/MindMapOverview</pre>
 </div>
-<div current-tiddler="开场白" modified="20140802230854170" title="$:/HistoryList" type="application/json">
+<div current-tiddler="开场白" modified="20140805133621532" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;开场白&quot;
@@ -4327,10 +4349,14 @@ $title$
 \end
 </pre>
 </div>
+<div created="20140805131139078" modified="20140805131311664" title="$:/MindMapOverview" type="text/vnd.tiddlywiki">
+<pre>&lt;iframe style=&quot;width:1000px;height:600px;border: 1px
+solid black&quot; src=&quot;https://app.wisemapping.com/c/maps/221735/embed?zoom=0.9&quot;&gt; &lt;/iframe&gt;</pre>
+</div>
 <div created="20140712230150732" modified="20140712230202823" title="$:/Overview" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
-<div created="20140802080102734" list="bookmark infoMap km study term tip topic" modified="20140802141804370" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
+<div created="20140802080102734" list="bookmark infoMap km study term tip topic" modified="20140804111314451" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
 <pre>\define tag-styles()
 background-color:$(backgroundColor)$;
 \end
@@ -4371,7 +4397,10 @@ $:/state/popup/$(popupState)$
 &lt;/$set&gt;
 
 &lt;/$list&gt;
-</pre>
+
+&lt;hr&gt;
+
+&lt;$list filter=&quot;[untagged[]!is[system]field:type[text/vnd.tiddlywiki]!title[开场白]!title[最近更新]]&quot; template=&quot;$:/core/ui/ListItemTemplate&quot;/&gt;</pre>
 </div>
 <div author="JoaoBolila" dependents="" description="Highlight.js plugin for TiddlyWiki5" plugin-type="plugin" title="$:/plugins/tiddlywiki/highlight" type="application/json" version="5.0.13-beta">
 <pre>{
@@ -4413,10 +4442,10 @@ $:/state/popup/$(popupState)$
 <div created="20140801154235716" modified="20140801155652850" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Zac's notebook</pre>
 </div>
-<div list="开场白 最近更新" title="$:/StoryList">
+<div list="开场白 最近更新 $:/MindMapOverview" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140802141938398" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805131845640" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>\define toc-heading(caption,tag,option)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
   &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
@@ -4455,7 +4484,7 @@ $:/state/popup/$(popupState)$
 
 &lt;hr/&gt;
 
-&lt;$button message=&quot;tw-new-tiddler&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;New tiddler&lt;/span&gt;&lt;/$button&gt; · &lt;$button set=&quot;$:/state/toc/alltags&quot; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Tags&lt;/span&gt;&lt;/$button&gt; · [[Others|$:/Overview]]
+&lt;$button message=&quot;tw-new-tiddler&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;New&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;&lt;$button to=&quot;$:/MindMapOverview&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Map&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;&lt;$button set=&quot;$:/state/toc/alltags&quot; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;&lt;span style=&quot;text-shadow: 0 1px 0 rgba(255,255,255, 0.8);&quot;&gt;Tags&lt;/span&gt;&lt;/$button&gt;&amp;nbsp;&amp;nbsp;·&amp;nbsp;&amp;nbsp;[[All|$:/Overview]]
 
 &lt;/$reveal&gt;
 
@@ -4576,17 +4605,50 @@ tiddlerwidth: `660px`</pre>
 <div _canonical_uri="./images/back-of-the-book-index.gif" created="20140801172237659" modified="20140801172303920" title="back-of-the-book-index.gif" type="image/gif">
 <pre></pre>
 </div>
-<div color="#3d6cad" created="20140802101654594" modified="20140802114954972" title="bookmark" type="text/vnd.tiddlywiki">
+<div color="#3d6cad" created="20140802101654594" modified="20140804110025236" tags="tag" title="bookmark" type="text/vnd.tiddlywiki">
 <pre>收藏各种有用的网址</pre>
 </div>
-<div created="20140801174501042" modified="20140801180018767" tags="term km topic infoMap" title="ConceptMaps" type="text/vnd.tiddlywiki">
-<pre>A concept map is a diagram that depicts suggested relationships between concepts. It is a graphical tool that designers, engineers, technical writers, and others use to organize and structure knowledge.
+<div _canonical_uri="./images/cluster-radial.png" created="20140804103223830" modified="20140804103223830" title="cluster-radial.png" type="image/png">
+<pre></pre>
+</div>
+<div created="20140801174501042" modified="20140804113827825" tags="term km topic infoMap" title="ConceptMaps" type="text/vnd.tiddlywiki">
+<pre>A concept map is a diagram that depicts suggested relationships between concepts. It is a graphical tool that ''designers'', ''engineers'', ''technical writers'', and others use to organize and structure knowledge.
 
 A concept map typically represents ideas and information as boxes or circles, which it connects with labeled arrows in a downward-branching hierarchical structure. The relationship between concepts can be articulated in linking phrases such as causes, requires, or contributes to.
 
-The technique for visualizing these relationships among different concepts is called concept mapping. Concept maps define the ontology of computer systems, for example with the object-role modeling or Unified Modeling Language formalism.
+The technique for visualizing these relationships among different concepts is called concept mapping. Concept maps define the [[Ontology]] of computer systems, for example with the object-role modeling or UnifiedModelingLanguage formalism.
 
-!!! Concept mapping versus TopicMaps and MindMaps</pre>
+!!! Concept mapping versus TopicMaps and MindMaps
+
+Concept maps are rather similar to TopicMaps (in that both allow to connect concepts or topics via graphs), while both can be contrasted with the similar idea of [[mind mapping|MindMaps]], which is often restricted to @@.nolink [[RadialHierarchies]]@@&lt;&lt;dict &quot;RadialHierarchies&quot; &quot;25&quot;&gt;&gt; and @@.nolink [[TreeStructures]]@@&lt;&lt;dict &quot;TreeStructures&quot; &quot;97&quot;&gt;&gt;. Among the various schema and techniques for visualizing ideas, processes, organizations, concept mapping, as developed by Joseph Novak is unique in its philosophical basis, which ''&quot;makes concepts, and propositions composed of concepts, the central elements in the structure of knowledge and construction of meaning.&quot;'' Another contrast between Concept mapping and Mind mapping is the speed and spontaneity when a [[MindMap|MindMaps]] is created. A [[MindMap|MindMaps]] reflects what you think about a single topic, which can focus group brainstorming. A Concept map can be a map, a system view, of a real (abstract) system or set of concepts. Concept maps are more free form, as multiple hubs and clusters can be created, unlike mind maps, which fix on a single conceptual center.
+
+!! Use
+
+Concept maps are used to stimulate the generation of ideas, and are believed to aid creativity. Concept mapping is also sometimes used for BrainStorming. Although they are often personalized and @@.nolink [[idiosyncratic]]@@&lt;&lt;dict &quot;idiosyncratic&quot; &quot;65&quot;&gt;&gt;, concept maps can be used to communicate complex ideas.
+
+Formalized concept maps are used in software design, where a common usage is UnifiedModelingLanguage diagramming amongst similar conventions and development methodologies.
+
+Concept mapping can also be seen as a first step in [[Ontology]]-building, and can also be used flexibly to represent formal argument.
+
+!!! Concept maps are widely used in education and business. Uses include:
+
+* Note taking and summarizing gleaning key concepts, their relationships and hierarchy from documents and source materials
+* New knowledge creation: e.g., transforming TacitKnowledge into an organizational resource, mapping team knowledge
+* Institutional knowledge preservation (retention), e.g., eliciting and mapping expert knowledge of employees prior to retirement
+* Collaborative knowledge modeling and the transfer of expert knowledge
+* Facilitating the creation of shared vision and shared understanding within a team or organization
+* Instructional design: concept maps used as Ausubelian &quot;advance organizers&quot; that provide an initial conceptual frame for subsequent information and learning.
+* Training: concept maps used as Ausubelian &quot;advanced organizers&quot; to represent the training context and its relationship to their jobs, to the organization's strategic objectives, to training goals.
+* Business Concept Mapping used as part of business analysis activities.
+* Increasing meaningful learning for example through writing activities where concept maps automatically generated from an essay are shown to the writer.
+* Communicating complex ideas and arguments
+* Examining the symmetry of complex ideas and arguments and associated terminology
+* Detailing the entire structure of an idea, train of thought, or line of argument (with the specific goal of exposing faults, errors, or gaps in one's own reasoning) for the scrutiny of others.
+* Enhancing [[Metacognition]] (learning to learn, and thinking about knowledge)
+* Improving language ability
+* Knowledge @@.nolink [[Elicitation]]@@&lt;&lt;dict &quot;Elicitation&quot; &quot;71&quot;&gt;&gt;
+* Assessing learner understanding of learning objectives, concepts, and the relationship among those concepts
+* @@.nolink [[Lexicon]]@@&lt;&lt;dict &quot;Lexicon&quot; &quot;56&quot;&gt;&gt; development</pre>
 </div>
 <div created="20140701091709376" modified="20140701203040294" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Don't Excel In School, Excel In Life" type="text/vnd.tiddlywiki">
 <pre>School is meant to prepare you for your adult, working life. But it doesn't resemble an adult's working life. There are no exams, there are no teachers, there are no grades, there is no homework. Instead, there are interpersonal relationships, practical knowledge and experience, real-life consequences for mistakes, and self-lead experiments and projects.
@@ -4602,7 +4664,7 @@ Many students that graduate with stellar grades end up performing horribly in th
 <div created="20140701091614979" modified="20140701102546295" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Have a Hobby" type="text/vnd.tiddlywiki">
 <pre>School should never ever be your one and only thing in life. You should always have friends and you should always have a hobby. Universities and colleges are increasingly implementing broad based admissions standards that weigh extra-curricular activities just as importantly as academic performance. The same goes for employers. In fact, almost all employers look for experience, leadership and practical knowledge before your grades.</pre>
 </div>
-<div created="20140801172906819" modified="20140801174911768" source="http://blog.csdn.net/raodotcong/article/details/6429991" title="Hypergraph" type="text/vnd.tiddlywiki">
+<div created="20140801172906819" modified="20140804111123312" source="http://blog.csdn.net/raodotcong/article/details/6429991" tags="term" title="Hypergraph" type="text/vnd.tiddlywiki">
 <pre>!!! 超图（Hypergraph）是什么
 
 简单的来说，对于我们熟悉的图而言，它的一个边（edge）只能和两个顶点连接；而对于超图来讲，人们定义它的边（这里叫超边，hyperedge）可以和''任意个数''的顶点连接。一个图和超图的示意图如下所示：
@@ -4617,7 +4679,7 @@ In mathematics, a hypergraph is a generalization of a graph, where an edge can c
 <div _canonical_uri="./images/Hypergraph.png" created="20140801173141769" modified="20140801173201571" title="Hypergraph.png" type="image/png">
 <pre></pre>
 </div>
-<div color="#65beb9" created="20140802115040398" modified="20140802115242444" title="infoMap" type="text/vnd.tiddlywiki">
+<div color="#65beb9" created="20140802115040398" modified="20140804110043333" tags="tag" title="infoMap" type="text/vnd.tiddlywiki">
 <pre>所有关于 Information Mapping 有关的条目。</pre>
 </div>
 <div created="20140801175238366" modified="20140801175644741" tags="infoMap term" title="InformationMapping" type="text/vnd.tiddlywiki">
@@ -4647,7 +4709,7 @@ The Information Mapping goal is measurable results that change the way people pr
 
 汇集了各种精品课程，上这个网站的目的是学习知识。</pre>
 </div>
-<div color="#e87875" created="20140802115336299" modified="20140802141517459" title="km" type="text/vnd.tiddlywiki">
+<div color="#e87875" created="20140802115336299" modified="20140804110057899" tags="tag" title="km" type="text/vnd.tiddlywiki">
 <pre>所有关于知识管理有关的条目。</pre>
 </div>
 <div created="20140701091948533" modified="20140701203711293" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Learn From Others" type="text/vnd.tiddlywiki">
@@ -4691,7 +4753,7 @@ The Information Mapping goal is measurable results that change the way people pr
 <div _canonical_uri="./images/mindmap-history.png" created="20140802155600508" modified="20140802155600508" title="mindmap-history.png" type="image/png">
 <pre></pre>
 </div>
-<div created="20140801180108946" modified="20140802230736737" tags="infoMap term km topic" title="MindMaps" type="text/vnd.tiddlywiki">
+<div created="20140801180108946" modified="20140804112607227" tags="infoMap term km topic" title="MindMaps" type="text/vnd.tiddlywiki">
 <pre>A mind map is a diagram used to visually organise information. A mind map is often created around a single concept, drawn as an image in the center of a blank landscape page, to which associated representations of ideas such as images, words and parts of words are added. Major ideas are connected directly to the central concept, and other ideas branch out from those.
 
 Mind maps can be drawn by hand, either as &quot;rough notes&quot; during a lecture, meeting or planning session, for example, or as higher quality pictures when more time is available.
@@ -4716,9 +4778,14 @@ Buzan suggests the following guidelines for creating mind maps:
 !!! Differences from other visualizations
 
 * ConceptMaps - Mind maps differ from ConceptMaps in that mind maps focus on only one word or idea, whereas concept maps connect multiple words or ideas. Also, concept maps typically have text labels on their connecting lines/arms. Mind maps are based on radial hierarchies and tree structures denoting relationships with a central governing concept, whereas concept maps are based on connections between concepts in more diverse patterns. However, either can be part of a larger PersonalKnowledgeBase system.
-* ModellingGraphs - There is no rigorous right or wrong with mind maps, relying on the arbitrariness of mnemonic systems. A [[UML Diagram]] or a SemanticNetwork has structured elements modelling relationships, with lines connecting objects to indicate relationship. This is generally done in black and white with a clear and agreed iconography. Mind maps serve a different purpose: they help with memory and organization. Mind maps are collections of words structured by the mental context of the author with visual mnemonics, and, through the use of colour, icons and visual links, are informal and necessary to the proper functioning of the mind map.
+* ModellingGraphs - There is no rigorous right or wrong with mind maps, relying on the arbitrariness of mnemonic systems. A [[UML diagram|UnifiedModelingLanguage]] or a SemanticNetwork has structured elements modelling relationships, with lines connecting objects to indicate relationship. This is generally done in black and white with a clear and agreed iconography. Mind maps serve a different purpose: they help with memory and organization. Mind maps are collections of words structured by the mental context of the author with visual mnemonics, and, through the use of colour, icons and visual links, are informal and necessary to the proper functioning of the mind map.
 
 {{mindmap-history.png}}</pre>
+</div>
+<div created="20140804103235987" modified="20140804103806917" tags="term infoMap" title="RadialHierarchies" type="text/vnd.tiddlywiki">
+<pre>放射状的层次结构。
+
+{{cluster-radial.png}}</pre>
 </div>
 <div created="20140701092032171" modified="20140701102935467" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Set Clear Objectives" type="text/vnd.tiddlywiki">
 <pre>Is your goal to maintain a 90% average in your classes? If that's the case, what exactly do you need to do to achieve that? How long do you have to study? What books do you have to read? What other activities or opportunities do you have to sacrifice (there is always a sacrifice)? Your goals and how you pursue them will always determine your outcome. Never rely on luck or chance. You control your future.</pre>
@@ -4726,19 +4793,22 @@ Buzan suggests the following guidelines for creating mind maps:
 <div created="20140701091709368" modified="20140701102536921" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Sleep Properly" type="text/vnd.tiddlywiki">
 <pre>Humans are not designed to sleep on irregular schedules. Before the invention of the light bulb, we always slept around the same time when it got dark and woke up around the same time when it was bright. I guarantee you that if you manage to sleep at the same time every day for one week, you will feel noticeably more alert, energetic and smart. One big reason why you feel more energetic in the summer is because the additional sunlight helps to regulate your sleep.</pre>
 </div>
-<div color="#e95cb8" created="20140802141403348" modified="20140802141539391" title="study" type="text/vnd.tiddlywiki">
+<div color="#e95cb8" created="20140802141403348" modified="20140804110118057" tags="tag" title="study" type="text/vnd.tiddlywiki">
 <pre>各种学习技巧，跟学习有关的话题。</pre>
 </div>
 <div created="20140701090952319" modified="20140701102620266" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Study When You Study" type="text/vnd.tiddlywiki">
 <pre>The most important tip I have when it comes to studying is to not multi-task. You may think that Facebook, Youtube, TV, video games and internet surfing only have a slight impact on your studying, but we both know that's not true. Something as simple as turning your TV off can improve your productivity by 500%. Seriously. When you study, study. That's it.</pre>
 </div>
-<div color="#a5c2d1" created="20140802141219366" modified="20140802141353684" title="term" type="text/vnd.tiddlywiki">
+<div created="20140804110145130" modified="20140804110217158" tags="tag" title="tag" type="text/vnd.tiddlywiki">
+<pre>所有属于 tag 的 tiddler</pre>
+</div>
+<div color="#a5c2d1" created="20140802141219366" modified="20140804110130807" tags="tag" title="term" type="text/vnd.tiddlywiki">
 <pre>各种领域的术语，有助于理解该领域的专业词汇。</pre>
 </div>
-<div color="#9dd241" created="20140802140837540" modified="20140802140952390" title="tip" type="text/vnd.tiddlywiki">
+<div color="#9dd241" created="20140802140837540" modified="20140804110239054" tags="tag" title="tip" type="text/vnd.tiddlywiki">
 <pre>帮助自己提高的小技巧、小技术</pre>
 </div>
-<div color="#eb8a06" created="20140802135954477" modified="20140802142200410" title="topic" type="text/vnd.tiddlywiki">
+<div color="#eb8a06" created="20140802135954477" modified="20140804110250507" tags="tag" title="topic" type="text/vnd.tiddlywiki">
 <pre>所有主题、话题，讨论的内容。并显示在 TOC 里面。</pre>
 </div>
 <div _canonical_uri="./images/topicmap.png" created="20140801174128629" modified="20140801174128629" title="topicmap.png" type="image/png">
@@ -4757,16 +4827,82 @@ Topic Maps are similar to ConceptMaps and MindMaps in many respects, though only
 
 {{topicmap.png}}</pre>
 </div>
+<div _canonical_uri="./images/treeStructure.png" created="20140804103620578" modified="20140804103641291" title="treeStructure.png" type="image/png">
+<pre></pre>
+</div>
+<div created="20140804103620576" modified="20140804113920392" tags="term infoMap" title="TreeStructures" type="text/vnd.tiddlywiki">
+<pre>树形结构
+
+{{treeStructure.png}}</pre>
+</div>
 <div created="20140701092112841" modified="20140701102948563" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Work Hard, Play Hard" type="text/vnd.tiddlywiki">
 <pre>Doing too much of any one thing will always result in burn-out. The key to success in school and life is balance. You always need a mix of social, athletic, academic and self-interest activities. So, study hard when you need to, but don't forget to have fun as well. Your grades and your life will both improve as a result.</pre>
 </div>
-<div created="20140801184813916" modified="20140802142524512" title="开场白" type="text/vnd.tiddlywiki">
-<pre>这是于子杰的个人笔记本，左边的 Contents 是目录。</pre>
+<div created="20140801184813916" modified="20140805132520073" title="开场白" type="text/vnd.tiddlywiki">
+<pre>这是于子杰的个人笔记本，也是我个人知识管理的试验田。我所有的知识将汇聚于此。左边的 Contents 是目录。
+
+&gt; 不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握。- warfalcon
+
+!!! 工具条
+
+* New：新建条目
+* Map：笔记本的思维导图
+* Tags：所有的标签一览及它们的作用
+* All：笔记本所有文件详细目录
+
+!!! 要求
+
+所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。</pre>
 </div>
-<div created="20140801184831414" modified="20140802154823559" title="最近更新" type="text/vnd.tiddlywiki">
+<div created="20140804115648294" modified="20140804215606544" source="http://www.douban.com/thing/759/?on=1058705" tags="digest study tip topic" title="怎样安排时间读书" type="text/vnd.tiddlywiki">
+<pre>!!! 最近三五年平均每年读过的书都在100-200本左右，经常被问你怎么有那么多的时间去读书呢？
+
+* 书的类型：电子书和实体都有，现在的比例是7：3
+* 阅读的时间：
+*# 早上5：30-6：00起床，有将近1小时的整块阅读时间，如果时间充足一点，会做些笔记.
+*# 包里放上7寸的阅读设备（以前是K3，这段时间换成NT），放上几十本排版不错的电子书，在有时间的时候看看，比如排队、等人、开会之类零散时间。
+*# 手机里放一些有声书，比如台湾的博客思听、每天八分钟、中医堂、百家讲坛，做车、做家务、身体锻炼时听听
+*# 睡前把所有事情都安排完，会拿本书在床上看上一会，然后睡觉。
+*# 所有读完第一遍，觉得不错的书，会开始读第二遍并做些笔记。
+*# 出差时如果周末有时间会找家环境好点的咖啡厅，看上半天或一天书。不出差如果周末有空闲时会去图书馆，带上笔记看上半天书，做个记录。
+*# 做飞机或动车时会准备二、三本纸制书，比较厚有些深度的那种，我发现自己在飞机上看书效果最好。看累了就做笔记或简评。
+* 想多看点书的最有用的建议：就是关闭电脑、离开网络，有网络有电脑的地方永远会让你分心的
+* 我看书效果最好的三个地方：''飞机''、''图书馆''、''咖啡厅''
+
+---
+
+总能在网上看到有人抱怨没有时间看书，在现在这个时代最影响注意力的东西就是网络，只要有了网络很容易浪费时间，不管是你用电脑、手机都是一样，点来点去，1个小时2个小时很快就没了，就在我在回答中说的，想多看点书最好的办法就是离开网络，下决心每天留出半小时或1小时的阅读时间，关电脑，关手机，开始看书，看完书做随手做些记录。
+
+关于阅读设备：现在7寸的阅读器已经非常便宜了，K4和N2（Nook Simple Touch）也就700-800元左右，可以考虑买一个。放在包里，拷贝些电子书，有空的时间顺手就拿出来读一会。最好是 ~E-Ink 屏的，不要平板，平板什么都能做太容易分心了，我换成 Nook Tablet 之后，阅读的时间和数量要比K3少很多。
+
+给个建议：最好不要在地铁或公交上用手机看书。颠簸中看小说、玩游戏，很容易引起视疲劳。一般来说，人们使用手机、平板电脑时，眼睛和屏幕的距离在20厘米左右，这样近距离且长时间地盯着屏幕看，容易使睫状肌产生疲劳，变成假性近视.，
+
+在使用手持终端时，最好不要离屏幕太近，保持30厘米以上的距离最为适宜。同时尽量多眨眼，避免眼球过多地暴露在空气中，以减少眼部水分的蒸发。此外，应在休息时间经常站起来，活动活动颈部肌肉，最好找些有声书、Podcast或英语来听。
+
+!!! 以前在微博转的一句话：
+
+&gt; 每天花一点钟看10页有用的书，每年可看3600多页书，30年读11万页书。诸位，11万页书足可以使你成为一个学者了。可是，每天看三种小报也得费你一点钟的工夫；四圈麻将又得费你一点钟的光阴。看小报呢？还是打麻将呢？还是努力做一个学者呢？——胡适，纪念胡适先生逝世50周年。
+
+从今天开始培养你的阅读习惯吧，少上网、少玩会游戏，少聊天，少刷些豆瓣、微博，开始阅读。
+
+这篇文章是2011年写的，过了几年之后，回头看看，只要把每天上网的时候用来阅读，阅读时间非常充足。
+
+---
+
+我是warfalcon ，微信（read01）的目标是让你成为行动者而不是阅读者，不定期分享一些五花八门的读书笔记和书评，每天更新。
+
+2013年在微信上分享了100多本书的心得和笔记，欢迎关注。</pre>
+</div>
+<div created="20140801184831414" modified="20140804215736634" title="最近更新" type="text/vnd.tiddlywiki">
 <pre>&lt;ul&gt;
 &lt;$list filter=&quot;[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]&quot;&gt;
-&lt;li&gt;&lt;h3&gt;&lt;$link to={{!!title}}&gt;&lt;$view tiddler={{!!title}} field=&quot;title&quot; format=&quot;text&quot;/&gt;&lt;/$link&gt;&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 style=&quot;font-weight:normal;&quot;&gt;
+&lt;$link to={{!!title}}&gt;
+&lt;$view tiddler={{!!title}} field=&quot;title&quot; format=&quot;text&quot;/&gt;
+&lt;/$link&gt;
+&lt;/h4&gt;
+&lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;</pre>
 </div>
