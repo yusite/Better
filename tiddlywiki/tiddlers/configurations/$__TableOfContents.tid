@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140802141938398
+modified: 20140805131845640
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -44,7 +44,7 @@ type: text/vnd.tiddlywiki
 
 <hr/>
 
-<$button message="tw-new-tiddler" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New tiddler</span></$button> · <$button set="$:/state/toc/alltags" setTo="show" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">Tags</span></$button> · [[Others|$:/Overview]]
+<$button message="tw-new-tiddler" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">New</span></$button>&nbsp;&nbsp;·&nbsp;&nbsp;<$button to="$:/MindMapOverview" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">Map</span></$button>&nbsp;&nbsp;·&nbsp;&nbsp;<$button set="$:/state/toc/alltags" setTo="show" class="btn-invisible"><span style="text-shadow: 0 1px 0 rgba(255,255,255, 0.8);">Tags</span></$button>&nbsp;&nbsp;·&nbsp;&nbsp;[[All|$:/Overview]]
 
 </$reveal>
 
