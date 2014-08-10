@@ -157,8 +157,6 @@ Error message and password prompt
 
 <li>$:/HistoryList</li>
 
-<li>$:/Introduction</li>
-
 <li>$:/isEncrypted</li>
 
 <li>$:/macro/annotate</li>
@@ -202,6 +200,8 @@ Error message and password prompt
 <li>$:/themes/zacwiki</li>
 
 <li>$:/ToDo</li>
+
+<li>$:/Welcome</li>
 
 <li>back-of-the-book index</li>
 
@@ -303,7 +303,6 @@ Error message and password prompt
 </div>
 <div title="$:/config/OriginalTiddlerPaths" type="application/x-tiddler-dictionary">
 <pre>$:/DefaultTiddlers: configurations/$__DefaultTiddlers.tid
-$:/Introduction: configurations/$__Introduction.tid
 $:/MindMap: configurations/$__MindMap.tid
 $:/Overview/Tags: configurations/$__Overview_Tags.tid
 $:/RecentUpdate: configurations/$__RecentUpdate.tid
@@ -311,6 +310,7 @@ $:/SiteSubtitle: configurations/$__SiteSubtitle.tid
 $:/SiteTitle: configurations/$__SiteTitle.tid
 $:/TableOfContents: configurations/$__TableOfContents.tid
 $:/ToDo: configurations/$__ToDo.tid
+$:/Welcome: configurations/$__Welcome.tid
 $:/Overview: configurations/universal/$__Overview.tid
 $:/core/ui/SideBarLists: configurations/universal/$__core_ui_SideBarLists.tid
 $:/core/ui/ViewToolbar/close-others: configurations/universal/$__core_ui_ViewToolbar_close-others.tid
@@ -4279,34 +4279,17 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 <div created="20140630131636250" list-after="$:/core/ui/ViewToolbar/edit" modified="20140801134250028" tags="$:/tags/ViewToolbar $:/tags/EditToolbar" title="$:/core/ui/ViewToolbar/close-others" type="text/vnd.tiddlywiki">
 <pre>&lt;$button message=&quot;tw-close-other-tiddlers&quot; title=&quot;Close other tiddlers&quot; aria-label=&quot;Close other tiddlers&quot; class=&quot;btn-invisible&quot;&gt;{{$:/core/images/close-others-button}}&lt;/$button&gt;</pre>
 </div>
-<div created="20140801155734477" modified="20140805153857645" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
-<pre>$:/Introduction
+<div created="20140801155734477" modified="20140805160127482" title="$:/DefaultTiddlers" type="text/vnd.tiddlywiki">
+<pre>$:/Welcome
 $:/RecentUpdate
 $:/ToDo</pre>
 </div>
-<div current-tiddler="$:/Introduction" modified="20140805155348232" title="$:/HistoryList" type="application/json">
+<div current-tiddler="$:/Welcome" modified="20140810190416200" title="$:/HistoryList" type="application/json">
 <pre>[
     {
-        &quot;title&quot;: &quot;$:/Introduction&quot;
+        &quot;title&quot;: &quot;$:/Welcome&quot;
     }
 ]</pre>
-</div>
-<div created="20140801184813916" modified="20140805150556445" title="$:/Introduction" type="text/vnd.tiddlywiki">
-<pre>这是于子杰的个人笔记本，也是我个人知识管理的试验田。我所有的知识将汇聚于此。左边的 Contents 是目录。
-
-&gt; ''不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握'' - warfalcon
-
-!!! 工具条
-
-* New：新建条目
-* Map：笔记本的思维导图
-* Tags：所有的标签一览及它们的作用
-* All：笔记本所有文件详细目录
-
-!!! 要求
-
-* 所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。
-* 笔记本中的条目，尽量自己写出来，不使用别人的摘抄。</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -4493,7 +4476,7 @@ $:/state/popup/$(popupState)$
 <div created="20140801154235716" modified="20140801155652850" title="$:/SiteTitle" type="text/vnd.tiddlywiki">
 <pre>Zac's notebook</pre>
 </div>
-<div list="$:/Introduction $:/RecentUpdate $:/ToDo" title="$:/StoryList">
+<div list="$:/Welcome $:/RecentUpdate $:/ToDo" title="$:/StoryList">
 <pre></pre>
 </div>
 <div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805153926192" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
@@ -4649,13 +4632,31 @@ tiddlerwidth: `660px`</pre>
     }
 }</pre>
 </div>
-<div created="20140805145709304" modified="20140805150116426" title="$:/ToDo" type="text/vnd.tiddlywiki">
+<div created="20140805145709304" modified="20140810185849992" title="$:/ToDo" type="text/vnd.tiddlywiki">
 <pre>* [[个人知识管理的方法|http://jianshu.io/p/dbdac17eb9ff]]
 * [[雕爷之商业思考篇|http://cnfeat.com/2014/07/31/2014-07-31-diaoye-chuangye-5/]]
 * [[加油站的产品观|http://jianshu.io/p/e2bfc6171595]]
 * [[个人知识管理的方法(WEE)|http://joinwee.com/lesson/109/]]
 * [[常見知識管理工具與方法|http://www.eland.com.tw/support/kcolumn/topic1_3]]
-* [[MBAlib 知识管理|http://wiki.mbalib.com/wiki/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86]]</pre>
+* [[MBAlib 知识管理|http://wiki.mbalib.com/wiki/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86]]
+* [[Trello|https://trello.com]]</pre>
+</div>
+<div created="20140801184813916" modified="20140805160118686" title="$:/Welcome" type="text/vnd.tiddlywiki">
+<pre>这是于子杰的个人笔记本，也是我个人知识管理的试验田。我所有的知识将汇聚于此。左边的 Contents 是目录。
+
+&gt; ''不把信息当作知识，不把收藏当作学习，不把阅读当作思考，不把储存当作掌握'' - warfalcon
+
+!!! 工具条
+
+* New：新建条目
+* Map：笔记本的思维导图
+* Tags：所有的标签一览及它们的作用
+* All：笔记本所有文件详细目录
+
+!!! 要求
+
+* 所有条目都需要有自己的 Tags，并且和一个或多个其他条目相连。
+* 笔记本中的条目，尽量自己写出来，不使用别人的摘抄。</pre>
 </div>
 <div created="20140801172059910" modified="20140801172428441" tags="term" title="back-of-the-book index" type="text/vnd.tiddlywiki">
 <pre>A back-of-the-book index (or just book index) is a collection of entries, often alphabetically arranged in an index, made to allow users to locate information in a given book (or related document).
