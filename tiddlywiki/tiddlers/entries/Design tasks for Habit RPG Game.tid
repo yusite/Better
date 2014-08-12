@@ -1,5 +1,5 @@
 created: 20140811091216488
-modified: 20140812155158316
+modified: 20140812160932133
 tags: howto topic
 title: Design tasks for Habit RPG Game
 type: text/vnd.tiddlywiki
@@ -19,3 +19,4 @@ type: text/vnd.tiddlywiki
 ** ''尽量将任务颜色保持在橙黄绿3色之中。''
 * 一项任务可以由''规定完成量（Dailies）''和''浮动量（Habits）''组成。
 * 经常被遗忘的事情，也可以写进 ~To-Dos 里面。（比如：买只灯泡）
+* 如果一件事虽然已放入列表里，但仍不愿意去做，证明该任务回报率过低，应当降低任务难度（拆分任务），或增加任务回报（选择任务难度为“高”）。
