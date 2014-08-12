@@ -1,13 +1,12 @@
 created: 20140811091216488
-modified: 20140812160932133
+modified: 20140812171312140
 tags: howto topic
 title: Design tasks for Habit RPG Game
 type: text/vnd.tiddlywiki
 
-* 一定是需要进步的习惯。
-* 一定要有挑战性，不是随随便便就能做好的。
-* Habit RPG 并不是 Task Manager
-* 比如 Shopping list 则不可以放入 Habit RPG 里面。
+* 一定是需要进步的行为习惯。
+* 一定要有挑战性，不是随随便便就能做好的任务。
+* Habit RPG 并不是 Task Manager，比如 Shopping list 则不可以放入 Habit RPG 里面。
 
 !!! 任务设定规则
 
@@ -20,3 +19,7 @@ type: text/vnd.tiddlywiki
 * 一项任务可以由''规定完成量（Dailies）''和''浮动量（Habits）''组成。
 * 经常被遗忘的事情，也可以写进 ~To-Dos 里面。（比如：买只灯泡）
 * 如果一件事虽然已放入列表里，但仍不愿意去做，证明该任务回报率过低，应当降低任务难度（拆分任务），或增加任务回报（选择任务难度为“高”）。
+
+!!! 什么时候去按键：做任务之前
+
+在做任务之前，做好完成任务心理准备，一切准备就绪之后，按下奖惩按键，然后全力以赴去做，直到任务完成为止。
