@@ -213,6 +213,8 @@ Error message and password prompt
 
 <li>ConceptMaps</li>
 
+<li>Design tasks for Habit RPG Game</li>
+
 <li>digest</li>
 
 <li>Don't Excel In School, Excel In Life</li>
@@ -221,9 +223,13 @@ Error message and password prompt
 
 <li>Exercise Regularly</li>
 
+<li>GTD System</li>
+
 <li>Have a Hobby</li>
 
 <li>How To Use The Brain More Effectively</li>
+
+<li>howto</li>
 
 <li>Hypergraph</li>
 
@@ -337,9 +343,11 @@ $:/theme: configurations/universal/theme/$__theme.tid
 $:/themes/tiddlywiki/vanilla/metrics: configurations/universal/theme/$__themes_tiddlywiki_vanilla_metrics.tid
 $:/themes/tiddlywiki/vanilla/settings: configurations/universal/theme/$__themes_tiddlywiki_vanilla_settings.tid
 ConceptMaps: entries/ConceptMaps.tid
+Design tasks for Habit RPG Game: entries/Design tasks for Habit RPG Game.tid
 Don't Excel In School, Excel In Life: entries/Don't Excel In School, Excel In Life.tid
 Eat Healthy: entries/Eat Healthy.tid
 Exercise Regularly: entries/Exercise Regularly.tid
+GTD System: entries/GTD System.tid
 Have a Hobby: entries/Have a Hobby.tid
 How To Use The Brain More Effectively: entries/How To Use The Brain More Effectively.tid
 Hypergraph: entries/Hypergraph.tid
@@ -368,6 +376,7 @@ topicmap.png: images/topicmap.png.tid
 treeStructure.png: images/treeStructure.png.tid
 bookmark: tags/bookmark.tid
 digest: tags/digest.tid
+howto: tags/howto.tid
 infoMap: tags/infoMap.tid
 km: tags/km.tid
 person: tags/person.tid
@@ -4284,7 +4293,7 @@ Edit Sidebar Lists &lt;$button message=&quot;tw-edit-tiddler&quot; param=&quot;$
 $:/RecentUpdate
 $:/ToDo</pre>
 </div>
-<div current-tiddler="$:/Welcome" modified="20140810192952454" title="$:/HistoryList" type="application/json">
+<div current-tiddler="$:/Welcome" modified="20140812104141848" title="$:/HistoryList" type="application/json">
 <pre>[
     {
         &quot;title&quot;: &quot;$:/Welcome&quot;
@@ -4377,7 +4386,7 @@ solid black&quot; src=&quot;https://app.wisemapping.com/c/maps/221735/embed?zoom
 <div created="20140712230150732" modified="20140712230202823" title="$:/Overview" type="text/vnd.tiddlywiki">
 <pre>&lt;&lt;tabs &quot;[all[shadows+tiddlers]tag[$:/tags/MoreSideBar]!has[draft.of]]&quot; &quot;$:/core/ui/MoreSideBar/Tags&quot; &quot;$:/state/tab/overview&quot;&gt;&gt;</pre>
 </div>
-<div created="20140802080102734" list="bookmark digest infoMap km person quote study term tip topic" modified="20140805150458891" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
+<div created="20140802080102734" list="bookmark digest howto infoMap km person quote study term tip topic" modified="20140812104103346" title="$:/Overview/Tags" type="text/vnd.tiddlywiki">
 <pre>\define tag-styles()
 background-color:$(backgroundColor)$;
 \end
@@ -4457,9 +4466,9 @@ $:/state/popup/$(popupState)$
     }
 }</pre>
 </div>
-<div created="20140801184831414" modified="20140805150743135" title="$:/RecentUpdate" type="text/vnd.tiddlywiki">
+<div created="20140801184831414" modified="20140811120054045" title="$:/RecentUpdate" type="text/vnd.tiddlywiki">
 <pre>&lt;ul&gt;
-&lt;$list filter=&quot;[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]&quot;&gt;
+&lt;$list filter=&quot;[!is[system]has[modified]!sort[modified]limit[8]]&quot;&gt;
 &lt;li&gt;
 &lt;h4 style=&quot;font-weight:normal;&quot;&gt;
 &lt;$link to={{!!title}}&gt;
@@ -4479,7 +4488,7 @@ $:/state/popup/$(popupState)$
 <div list="$:/Welcome $:/RecentUpdate $:/ToDo" title="$:/StoryList">
 <pre></pre>
 </div>
-<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140805153926192" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
+<div caption="{{$:/language/SideBar/Contents/Caption}}" created="20140701115858786" list-after="$:/core/ui/SideBar/Open" modified="20140811093752866" tags="$:/tags/SideBar" title="$:/TableOfContents" type="text/vnd.tiddlywiki">
 <pre>\define toc-heading(caption,tag,option)
 &lt;$reveal type=&quot;nomatch&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
   &lt;$button set=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; setTo=&quot;show&quot; class=&quot;btn-invisible&quot;&gt;
@@ -4495,7 +4504,7 @@ $:/state/popup/$(popupState)$
 &lt;$reveal type=&quot;match&quot; state=&lt;&lt;qualify &quot;$:/state/toc/$caption$&quot;&gt;&gt; text=&quot;show&quot;&gt;
 &lt;ol style=&quot;padding-left: 20px;&quot;&gt;
     &lt;$list filter=&quot;[!is[system]tag[$tag$]$option$sort[title]]&quot;&gt;
-      &lt;li style=&quot;line-height: 1.35em; padding: 3px 0 5px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
+      &lt;li style=&quot;line-height: 1.35em; padding: 3px 0 4px 0;&quot;&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt;&lt;/li&gt;
     &lt;/$list&gt;
 &lt;/ol&gt;
 &lt;/$reveal&gt;
@@ -4510,6 +4519,7 @@ $:/state/popup/$(popupState)$
 
 &lt;li&gt;&lt;&lt;toc-heading &quot;Bookmarks&quot; &quot;bookmark&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Study Tips&quot; &quot;study&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;&lt;toc-heading &quot;How To&quot; &quot;howto&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Knowledge Management&quot; &quot;km&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Wise Words&quot; &quot;quote&quot;&gt;&gt;&lt;/li&gt;
 &lt;li&gt;&lt;&lt;toc-heading &quot;Terminology&quot; &quot;term&quot; &quot;tag[topic]&quot;&gt;&gt;&lt;/li&gt;
@@ -4720,6 +4730,25 @@ Concept mapping can also be seen as a first step in [[Ontology]]-building, and c
 * Assessing learner understanding of learning objectives, concepts, and the relationship among those concepts
 * @@.nolink [[Lexicon]]@@&lt;&lt;dict &quot;Lexicon&quot; &quot;56&quot;&gt;&gt; development</pre>
 </div>
+<div created="20140811091216488" modified="20140812103218258" tags="howto topic" title="Design tasks for Habit RPG Game" type="text/vnd.tiddlywiki">
+<pre>* 一定是需要进步的习惯。
+* 一定要有挑战性，不是随随便便就能做好的。
+* 定期进行调整，如果发现一段时间内趋于平凡，则证明任务标准定得太低，没有挑战性。
+* 如果经常无法完成任务，则证明任务定得过重，适当减少任务。
+* Habit RPG 并不是 Task Manager
+* 比如 Shopping list 则不可以放入 Habit RPG 里面。
+
+!!! 任务设定方法
+
+* 以30分钟为一最小阶段，如果某任务完成时间需要超过30分钟，则可以分拆成若干阶段。
+* 一定是自己不愿意做的事情，需要强制自己去做的事情。不可以是能够轻松完成或已成为习惯的事情。
+* 随时检查任务的完成情况
+** 如果任务经常顺利完成（蓝色了很长时间），则可以适当提高任务难度
+** 如果任务经常不能完成（红色了很长时间），则可以适当降低任务难度
+** ''尽量将任务颜色保持在橙黄绿3色之中。''
+* 一项任务可以由''规定完成量（Dailies）''和''浮动量（Habits）''组成。
+</pre>
+</div>
 <div color="#88be91" created="20140805142440944" modified="20140805142803587" tags="tag" title="digest" type="text/vnd.tiddlywiki">
 <pre>网络上有思想性的文章，值得收藏的片段。</pre>
 </div>
@@ -4733,6 +4762,36 @@ Many students that graduate with stellar grades end up performing horribly in th
 </div>
 <div created="20140701091432940" modified="20140701102604130" souce="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Exercise Regularly" type="text/vnd.tiddlywiki">
 <pre>Healthy body, healthy mind. Keeping your body in shape keeps your hormone balance in check, it improves your cardio-vascular system, increases your self esteem, regulates your body's sleeping schedule, reduces stress and has countless other benefits. Dozens of studies have shown that those who exercise regularly perform better in school than those who don't.</pre>
+</div>
+<div created="20140811093422254" modified="20140811120542384" tags="howto topic" title="GTD System" type="text/vnd.tiddlywiki">
+<pre>!! 1. The Five Steps
+
+!!! Capture: Collect what has your attention
+
+Use an in-basket, notepad, or voice recorder to capture 100% of everything that has your attention. Little, big, personal and professional - all your to-do's, projects, things to handle or finish.
+
+!!! Clarify: Process what it means
+
+Take everything that your capture and ask: //Is it actionable?// If no, then trash it, incubate it, or file it as refernce. If yes, decide the very next action required. If it will take less than two minutes, do it now. If not, delegate it if you can; or put it on a list to do when you can.
+
+!!! Organize: Put it where it belongs
+
+Put action reminders on the right lists. For example create lists for the appropriate categories - calls to make, errands to run, emails to send, etc.
+
+!!! Reflect: Review frequently
+
+Look over your lists as often as necessary to determine what to do next. Do a weekly review to clean up, update your list, and clear your mind.
+
+!!! Engage: Simply do
+
+Use your system to take appropriate actions with confidence.
+
+!! 2. What to organize
+
+* Projects
+* Next Actions (with optional subcategories by context such as Calls, Computer, Office, Home, Errands, Agendas (people and meetings) and Anywhere)
+* Waiting For
+* Calendar (for time-specific actions, day-specific actions, and day-specific information only)</pre>
 </div>
 <div created="20140701091614979" modified="20140701102546295" source="http://hackmystudy.com/leos_top_ten_study_tips.html" tags="tip study" title="Have a Hobby" type="text/vnd.tiddlywiki">
 <pre>School should never ever be your one and only thing in life. You should always have friends and you should always have a hobby. Universities and colleges are increasingly implementing broad based admissions standards that weigh extra-curricular activities just as importantly as academic performance. The same goes for employers. In fact, almost all employers look for experience, leadership and practical knowledge before your grades.</pre>
@@ -4750,6 +4809,9 @@ Many students that graduate with stellar grades end up performing horribly in th
 # ''Daydream.''
 #&gt; Yes, daydream! Daydreaming is essential to being genius. But daydream big. Have a big vision. And commit to fulfilling your daydream. Don’t stop until you achieve your dreams.
 </pre>
+</div>
+<div color="#aae0e8" created="20140812103618597" modified="20140812103853493" tags="tag" title="howto" type="text/vnd.tiddlywiki">
+<pre>各种规定、方法，可以实践的条目、规则。</pre>
 </div>
 <div created="20140801172906819" modified="20140804111123312" source="http://blog.csdn.net/raodotcong/article/details/6429991" tags="term" title="Hypergraph" type="text/vnd.tiddlywiki">
 <pre>!!! 超图（Hypergraph）是什么
