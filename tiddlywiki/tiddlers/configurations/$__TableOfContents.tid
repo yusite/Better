@@ -1,7 +1,7 @@
 caption: {{$:/language/SideBar/Contents/Caption}}
 created: 20140701115858786
 list-after: $:/core/ui/SideBar/Open
-modified: 20140805153926192
+modified: 20140811093752866
 tags: $:/tags/SideBar
 title: $:/TableOfContents
 type: text/vnd.tiddlywiki
@@ -21,7 +21,7 @@ type: text/vnd.tiddlywiki
 <$reveal type="match" state=<<qualify "$:/state/toc/$caption$">> text="show">
 <ol style="padding-left: 20px;">
     <$list filter="[!is[system]tag[$tag$]$option$sort[title]]">
-      <li style="line-height: 1.35em; padding: 3px 0 5px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
+      <li style="line-height: 1.35em; padding: 3px 0 4px 0;"><$link to={{!!title}}><$view field="title"/></$link></li>
     </$list>
 </ol>
 </$reveal>
@@ -36,6 +36,7 @@ type: text/vnd.tiddlywiki
 
 <li><<toc-heading "Bookmarks" "bookmark">></li>
 <li><<toc-heading "Study Tips" "study" "tag[topic]">></li>
+<li><<toc-heading "How To" "howto" "tag[topic]">></li>
 <li><<toc-heading "Knowledge Management" "km" "tag[topic]">></li>
 <li><<toc-heading "Wise Words" "quote">></li>
 <li><<toc-heading "Terminology" "term" "tag[topic]">></li>

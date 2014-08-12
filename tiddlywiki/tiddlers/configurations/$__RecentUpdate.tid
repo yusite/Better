@@ -1,10 +1,10 @@
 created: 20140801184831414
-modified: 20140805150743135
+modified: 20140811120054045
 title: $:/RecentUpdate
 type: text/vnd.tiddlywiki
 
 <ul>
-<$list filter="[!is[system]tag[topic]has[modified]!sort[modified]limit[5]]">
+<$list filter="[!is[system]has[modified]!sort[modified]limit[8]]">
 <li>
 <h4 style="font-weight:normal;">
 <$link to={{!!title}}>
